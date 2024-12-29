@@ -1,0 +1,88 @@
+<section xml:id="sec_equassumptions">
+  <title>Equivalence Assumptions</title>
+  <p>
+    For the sake of simplicity, we discuss triads
+    (chords with three distinct notes)
+    on a 12-notes scale;
+    our model can be adapted to any set of chords with the same number of notes on a scale with any number of notes.
+  </p>
+  <p>
+    The underlying space of triads is
+    <m>\ZZ_{ 12 }^3</m> with the planes <m>x_1 = x_2</m>, <m>x_2 = x_3</m>,
+    and <m>x_3 = x_1</m> taken out;
+    thus we encode the twelve half tones by the elements in <m>\ZZ_{ 12 }</m>,
+    say starting with C as 0, C<m>\sharp</m> as 1, D as 2, etc., ending with B as 11.
+    Computing modulo 12 means we do not distinguish between a given note and its octave.
+    We develop further equivalencies, such as the following
+    (we think)
+    reasonable assumptions:
+    <ol>
+      <li>
+        <title>(a)</title>
+        <p>
+          chords that are translates of each other (e.g., E-minor and F<m>\sharp</m>-minor) are equivalent;
+        </p>
+      </li>
+      <li>
+        <title>(b)</title>
+        <p>
+          chords that are inversions of each other (e.g., in <xref ref="fig_inversions">Figure</xref>) are equivalent.<fn>
+          Considering only equivalence (b) means the space of triads becomes <m>\ZZ_{ 12 }^3/S_3</m>,
+          a discrete version of an orbifold <xref ref="tymoczko"/>.
+          </fn>
+        </p>
+      </li>
+    </ol>
+  </p>
+  <figure xml:id="fig_inversions">
+    <caption>F-major inversions.</caption>
+    <image width="73%" source="images/inversions.png"/>
+  </figure>
+  <p>
+    Our model will assign each triad a numerical value which we call its <em>weight</em>,
+    and any two equivalent chords will have the same weight.
+    It is based on a given scale,
+    from which we assign a value
+    (which we will call <em>interval fraction</em>)
+    to each interval;
+    the weight of a given triad equals the sum of all numerators and denominators of all interval fractions appearing in the triad.
+    Let's denote the respective interval fractions by <m>h_1</m>
+    (for a semitone),
+    <m>h_2</m>
+    (whole tone),
+    <m>h_3</m>
+    (minor third),
+    <ellipsis/>, <m>h_{ 11 }</m>
+    (major seven).
+    When computing the weight of a chord,
+    another natural assumption is that
+    <ol>
+      <li>
+        <title>(c)</title>
+        <p>
+          chords with the same set of interval fractions (e.g., G-minor and G-major,
+          each of which contain one major and one minor third) are equivalent.<fn>
+          At this point we would be remiss not pointing out the infamous question in harmony theory why major and minor chords are different in character from one another to our ears;
+          our equivalence (c) demands that our model does not prefer one over the other.
+          </fn>
+        </p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    It is an amusing combinatorial problem to count the resulting equivalence classes.
+    By the translation equivalence (a),
+    we may consider only triads that contain the note C. There are seven equivalence classes consisting of triads with distinct distances
+    (and so they contain six chords each),
+    four equivalence classes consisting of triads with two distinct distances
+    (containing three chords each),
+    and one class consisting of a single triad in which the three notes have equal distance;
+    <xref ref="fig_equclasses">Figure</xref>
+    shows one equivalence class each
+    (for ease of computing intervals, we repeated the C).
+  </p>
+  <figure xml:id="fig_equclasses">
+    <caption>Three sample equivalence classes.</caption>
+    <image width="73%" source="images/equclasses.png"/>
+  </figure>
+</section>

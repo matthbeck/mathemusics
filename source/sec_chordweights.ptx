@@ -1,0 +1,212 @@
+<section xml:id="sec_chordweights">
+  <title>Chord Weights Across Various Scales</title>
+  <p>
+    Naturally, the above analysis heavily depends on the scale being used.
+    We now collect more data, running through well known just scales;
+    for sake of comparison, we include also Kepler's just scale.
+    We collect the ranking stemming from the weight data for the following scales in <xref ref="table_variousscaleprimecomplexity">Table</xref>: {[comment:
+    references and detailswill be included later... I just wanted to give a birds-eye-view picture.]}
+    <ol marker="A">
+      <li>
+        <p>
+          Kepler's just scale
+        </p>
+      </li>
+      <li>
+        <p>
+          Wendy Carlos's super just scale
+        </p>
+      </li>
+      <li>
+        <p>
+          Wendy Carlos's harmonic scale
+        </p>
+      </li>
+      <li>
+        <p>
+          continued fraction scale with error <m>\lt 1 \%</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          Pythagorean scale with tritone frequency <m>729 \rat 512</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+  <table xml:id="table_variousscaleprimecomplexity">
+    <title>The chord weights stemming from various scales</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell><m>(1,2)</m></cell>
+        <cell><m>(1,3)</m></cell>
+        <cell><m>(1,4)</m></cell>
+        <cell><m>(1,5)</m></cell>
+        <cell><m>(1,6)</m></cell>
+        <cell><m>(2,4)</m></cell>
+        <cell><m>(2,5)</m></cell>
+        <cell><m>(2,6)</m></cell>
+        <cell><m>(2,7)</m></cell>
+        <cell><m>(3,6)</m></cell>
+        <cell><m>(3,7)</m></cell>
+        <cell><m>(4,8)</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>A</cell>
+        <cell>9</cell>
+        <cell>8</cell>
+        <cell>6</cell>
+        <cell>5</cell>
+        <cell>12</cell>
+        <cell>7</cell>
+        <cell>4</cell>
+        <cell>11</cell>
+        <cell>2</cell>
+        <cell>10</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>B</cell>
+        <cell>12</cell>
+        <cell>10</cell>
+        <cell>9</cell>
+        <cell>7</cell>
+        <cell>11</cell>
+        <cell>5</cell>
+        <cell>3</cell>
+        <cell>8</cell>
+        <cell>1</cell>
+        <cell>6</cell>
+        <cell>2</cell>
+        <cell>4</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>C</cell>
+        <cell>9</cell>
+        <cell>11</cell>
+        <cell>10</cell>
+        <cell>4</cell>
+        <cell>6</cell>
+        <cell>3</cell>
+        <cell>8</cell>
+        <cell>5</cell>
+        <cell>1</cell>
+        <cell>12</cell>
+        <cell>7</cell>
+        <cell>2</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>D</cell>
+        <cell>12</cell>
+        <cell>9</cell>
+        <cell>6</cell>
+        <cell>5</cell>
+        <cell>11</cell>
+        <cell>7</cell>
+        <cell>4</cell>
+        <cell>10</cell>
+        <cell>2</cell>
+        <cell>8</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>E</cell>
+        <cell>9</cell>
+        <cell>5</cell>
+        <cell>8</cell>
+        <cell>7</cell>
+        <cell>12</cell>
+        <cell>3</cell>
+        <cell>2</cell>
+        <cell>11</cell>
+        <cell>1</cell>
+        <cell>10</cell>
+        <cell>4</cell>
+        <cell>6</cell>
+      </row>
+    </tabular>
+    \vspace{10pt}
+  </table>
+  <p>
+    {[comment: likewise, there's much to discuss... that will be added;
+    again, I just wanted to give a picture.]}
+  </p>
+</section>
