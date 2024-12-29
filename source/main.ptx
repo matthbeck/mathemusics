@@ -77,7 +77,6 @@
     <xi:include href="./sec_intro.ptx"/>
     <xi:include href="./sec_equassumptions.ptx"/>
     <xi:include href="./sec_intfractions.ptx"/>
-    <xi:include href="./sec_chordweights.ptx"/>
     <backmatter>
       <xi:include href="./bibliography.ptx"/>
     </backmatter>
