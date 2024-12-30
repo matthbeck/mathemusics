@@ -72,6 +72,10 @@
         <author>
           <personname>Matthias Beck</personname>
         </author>
+        <p>Department of Mathematics <m>\quad \bullet \quad</m>
+        San Francisco State University
+        <url href="https://matthbeck.github.io/">
+        </p>
       </titlepage>
     </frontmatter>
     <xi:include href="./sec_intro.ptx"/>
