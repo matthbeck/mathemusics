@@ -112,6 +112,15 @@ var ptx_lunr_docs = [
   "id": "root-1-2-7-1",
   "level": "1",
   "url": "root-1-2-7-1.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " We thank the PreTeXt support group, in particular David Austin and David Farmer, for sharing their wisdom.  "
+},
+{
+  "id": "root-1-2-7-2",
+  "level": "1",
+  "url": "root-1-2-7-2.html",
   "type": "References",
   "number": "",
   "title": "Bibliography",
