@@ -1,0 +1,14 @@
+<section xml:id="sec_tone">
+  <title>Tone, Pitch, Frequency, and <m>\ZZ_{ 12 }</m> </title>
+  <p>
+    It is a short step to model, say,
+    a twelve-note scale as <m>\ZZ_{ 12 }</m>
+    (see <xref ref="fig_pianokeys">Figure</xref>),
+    and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
+  </p>
+  <figure xml:id="fig_pianokeys">
+    <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>.  [Figure credit: Wikimedia Commons,
+    Piano-full-en.svg]</caption>
+    <image width="83%" source="images/pianokeys.png"/>
+  </figure>
+</section>

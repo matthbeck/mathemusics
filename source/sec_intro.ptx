@@ -1,77 +1,47 @@
 <section xml:id="sec_intro">
-  <title>Introduction</title>
-  <p>
-    The mathematics of musical scales and, by extension,
-    intervals between two notes has been extensively studied
-    (see, e.g.,<nbsp/><xref ref="cladertwelvetones,schettlerxenharmonic"/> for two recent papers).
-    A key feature of an interval is the frequency ratio between the two notes.
-    Vastly simplified
-    (and one has to be careful, for various reasons),
-    our ears seem to prefer simple ratios,
-    such as <m>2 \rat 1</m> (octave), <m>3 \rat 2</m>
-    (perfect fifth),
-    <m>4 \rat 3</m>
-    (perfect forth),
-    etc.
-    See, e.g.,<nbsp/><xref ref="bensonmusic,walkerdon"/> for relevant background.
-  </p>
-  <p>
-    Likewise, there is much literature on the mathematics of musical chords giving,
-    e.g., interesting group-theoretic connections,
-    both in music theory (see,
-    e.g.,<nbsp/><xref ref="morristwelvetone"/>) and algebra
-    (see, e.g.,<nbsp/><xref ref="cransfioresatyendra"/>).
-    These tend to concern movements in a given musical piece,
-    such as transpositions and inversions.
-    It is a short step to model, say,
-    a twelve-note scale as <m>\ZZ_{ 12 }</m>
-    (see <xref ref="fig_pianokeys">Figure</xref>),
-    and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
-  </p>
-  <figure xml:id="fig_pianokeys">
-    <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>.  [Figure credit: Wikimedia Commons,
-    Piano-full-en.svg]</caption>
-    <image width="73%" source="images/pianokeys.png"/>
-  </figure>
-  <p>
-    But why do we perceive, say,
-    a major triad as more pleasant than a chord consisting of three notes separated by two half tones?
-    One could make an argument that the appreciation of chords is to a large extend culturally based.
-    On the other hand, acoustics (see,
-    e.g.,<nbsp/><xref ref="hallacoustics"/>) offers some explanations,
-    e.g., by looking at the wave forms of chords containing a perfect forth.
-    (Many piano tuners start with forths for the same reason,
-    though they listen for beats in order to achieve an equal-tempered scale.)
-    This gives rise to much interesting mathematics (see,
-    e.g.,<nbsp/><xref ref="cubarsi"/>) and statistics
-    (see, e.g.,<nbsp/><xref ref="eerolalahdelma,masinalopresti"/>).
-    However, the mathemusical literature seems to contain few studies on musical chords in analogy with the afore-mentioned simple-fractions intervals.
-    Our aim is to develop a mathematical model that might fill some of these gaps.
-  </p>
-  <p>
-    Capturing a numerical value of a given chord relies on fixing a scale,
-    and different scales will yield different numerics.
-    We will develop a model and then try it out on different scales;
-    all of them will be <em>just scales</em>,
-    i.e., ones with simple<fn>
-    Here <em>simple</em> refers to fractions whose numerator and denominator are not too large.
-    We will have more to say about this later.
-    </fn> rational frequency ratio
-    (as opposed to, e.g., the equal-tempered 12-note scale,
-    in which each interval has a frequency ratio equal to a power of<nbsp/><m>\sqrt[12] 2</m>;
-    see <xref ref="bolandhughston"/> for a mathematical interplay between just and equal-temperament scales).
-    It is this feature that will allow us to study chords from an basic mathematical perspective.
-  </p>
+  <title>Overture</title>
+
+  <subsection>
+    <title>What?</title>
+    <p>
+      This collection of notes is meant for a mathematician with a musical background, who would like
+to give a session (or two) on the connection of (elementary) mathematics and music, aimed at college
+students (not necessarily math majors). We do not assume that the students have a musical background,
+a curiosity for both math and music will suffice.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>What not?</title>
+    <p>
+      These notes are not comprehensive in any way; for that, we recommend, e.g., <xref
+ref="bensonmusic,walkerdon"/>. We merely present a few mathemusical topics that we find particularly
+amusing<mdash/>a few cherries picked from a very large and very tasty cake.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Who?</title>
+    <p>
+      The author is a math professor with an active research program situated where 
+combinatorics and number theory meet. He has played various instruments all his life and has given
+mathemusical sessions on some of the material covered here.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Quo vadis?</title>
   <p>
     Like most (all?) mathematical texts on musical subjects,
     we stress that we have no intention to capture, much less understand,
-    the way different chords feel<mdash/>this is (way) beyond any arithmetic nature,
+    the way different aspects of music feel<mdash/>this is (way) beyond any arithmetic nature,
     not to mention the rich music theory that gets much closer to this issue.
     Along similar lines,
-    we also clarify from the start that our model does not constitute any absolute measure:
+    we also clarify from the start that our models do not constitute any absolute measure:
     some features will seem arbitrary,
     and we feel that this is fine.
     The findings we offer are most definitely in the ears of the beholder,
-    and we merely invite the reader to come up with their own interpretation of the mathematics behind chords presented here.
+    and we merely invite the reader to come up with their own interpretation of the mathematics behind the music presented here.
   </p>
+  </subsection>
 </section>
