@@ -81,6 +81,7 @@
     <xi:include href="./sec_scales.ptx"/>
     <xi:include href="./sec_chords.ptx"/>
     <backmatter>
+      <xi:include href="./acknowledgements.ptx"/>
       <xi:include href="./bibliography.ptx"/>
     </backmatter>
   </article>
