@@ -4,10 +4,10 @@
   <subsection>
     <title>What?</title>
     <p>
-      This collection of notes is meant for a mathematician with a musical background, who would like
-to give a session (or two) on the connection of (elementary) mathematics and music, aimed at college
-students (not necessarily math majors). We do not assume that the students have a musical background,
-a curiosity for both math and music will suffice.
+      This collection of notes is meant for a mathematician with a musical background,<fn>
+        One reason for this assumption is that our musical explanations will be kept at a minimum, the other because we find it helpful to present this material with an instrument at hand. 
+      </fn>
+      who would like to give a session (or two) on the connection of (elementary) mathematics and music, aimed at college students (not necessarily math majors). We do not assume that the students have a musical background, a curiosity for both math and music will suffice.
     </p>
   </subsection>
 
@@ -25,7 +25,7 @@ amusing<mdash/>a few cherries picked from a very large and very tasty cake.
     <p>
       The author is a math professor with an active research program situated where 
 combinatorics and number theory meet. He has played various instruments all his life and has given
-mathemusical sessions on some of the material covered here.
+mathemusical class sessions and talks on (some of) the material covered here.
     </p>
   </subsection>
 
