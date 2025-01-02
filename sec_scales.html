@@ -194,7 +194,10 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_tone.html" class="internal"><span class="codenumber">2</span> <span class="title">Tone, Pitch, Frequency, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec_scales.html" class="internal"><span class="codenumber">3</span> <span class="title">Scales</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_scales.html" class="internal"><span class="codenumber">3</span> <span class="title">Scales</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_scales.html#sec_scales-10" class="internal"><span class="codenumber">3.1</span> <span class="title">Why are there 12 notes in our scale?</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_chords.html" class="internal"><span class="codenumber">4</span> <span class="title">Chords</span></a></div></li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="root-1-2-7.html" class="internal"><span class="title">Back Matter</span></a></div>
@@ -340,7 +343,17 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></figure><div class="para" id="sec_scales-8">The weight gives a (very rough) measure of a chord. Indeed, the “lightest” chord family <span class="process-math">\((3,7)\)</span> contains major and minor triads. The next three chord families, with weights 27 and 30, are <span class="process-math">\((2,7)\)</span> (corresponding to a set of lovely chords), <span class="process-math">\((4,8)\)</span> (corresponding to the tritone), and <span class="process-math">\((2,5)\)</span> (another lovely chord family). The respective chords are illustrated in <a href="sec_scales.html#fig_classicwinners" class="xref" data-knowl="./knowl/xref/fig_classicwinners.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.4">Figure 3.4</a>.</div>
 <figure class="figure figure-like" id="fig_classicwinners"><div class="image-box" style="width: 93%; margin-left: 3.5%; margin-right: 3.5%;"><img src="external/images/classicwinners.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4<span class="period">.</span></span><span class="space"> </span>The chords in the equivalence classes <span class="process-math">\((3,7)\text{,}\)</span> <span class="process-math">\((2,7)\text{,}\)</span> <span class="process-math">\((4,8)\text{,}\)</span> and <span class="process-math">\((2,5)\text{.}\)</span></figcaption></figure></section></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4<span class="period">.</span></span><span class="space"> </span>The chords in the equivalence classes <span class="process-math">\((3,7)\text{,}\)</span> <span class="process-math">\((2,7)\text{,}\)</span> <span class="process-math">\((4,8)\text{,}\)</span> and <span class="process-math">\((2,5)\text{.}\)</span></figcaption></figure><section class="subsection" id="sec_scales-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Why are there 12 notes in our scale?</span>
+</h3>
+<div class="para logical" id="sec_scales-10-2">
+<div class="para">Partial fractions turn out to be useful also when constructing a scale from first principles. Let’s say we want to come up with a scale with <span class="process-math">\(n\)</span> tones per octave, and we’d like to have a good approximation of the frequency ratio <span class="process-math">\(\frac 3 2\)</span> for the perfect fifth. If you think about the construction above, this translates to finding a "good" fraction <span class="process-math">\(\frac a b\)</span> in the sense that <span class="process-math">\(2^{ \frac a b }\)</span> is reasonably close to <span class="process-math">\(\frac 3 2\text{,}\)</span> in other words, we want to have a good rational approximation of <span class="process-math">\(\log_2(\frac 3 2)\text{.}\)</span> The continued fraction of this number equals <span class="process-math">\([0; 1, 1, 2, 2, 3, 1, 5, 2, 23, 2, 2, 1, \dots]\text{,}\)</span> which gives as first approximations</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac 1 2, \ \frac 2 3, \ \frac 3 5, \ \frac 4 7, \ \frac 7 {12}, \ \frac{ 17 }{ 29 } \, .
+\end{equation*}
+</div>
+</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_tone.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_chords.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
