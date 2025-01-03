@@ -245,15 +245,16 @@ equals <m>[0; 1, 1, 2, 2, 3, 1, 5, 2, 23, 2, 2, 1, \dots]</m>, which gives as fi
         \frac 1 2, \ \frac 2 3, \ \frac 3 5, \ \frac 4 7, \ \frac 7 {12}, \ \frac{ 24 }{ 41 }, \ \frac{ 31 }{ 53 }, \ \dots 
       </men>
       This suggests that there are scales with 2, 3 , 5, 7, 12, 41, 53, etc. tones in an octave that
-contain a reasonably good perfect fifth. Scales with 2 or 3 tones are not that exciting, but any
-musician will know a pentatonic and a heptatonic scale: you can hear examples by playing only
-the black, resp. white,` keys on a piano. These scales are not anywhere close to equally tuned, but
-those exist also: there is an ancient 5-tone scale tuning system called <em>slendro</em> used in
-gamelan instruments and a 7-tone scale tuning used in traditional Siamese music <xref ref="helmholtz"/>. The next numerator in <xref ref="firstapprox"/> is 12, and it is one indication why the 12-tone scale that is prevalent today is mathematically natural.
+contain a reasonably good perfect fifth. 
+    </p>
+
+    <p>
+      Scales with 2 or 3 tones are not that exciting, but any musician will know a pentatonic and a heptatonic scale: you can hear examples by playing only the black, resp. white,` keys on a piano. These scales are not anywhere close to equally tuned, but those exist also: there is an ancient 5-tone scale tuning system called <em>slendro</em> used in gamelan instruments and a 7-tone scale tuning used in traditional Siamese music <xref ref="helmholtz"/>. The next numerator in <xref ref="firstapprox"/> is 12, and it is one indication why the 12-tone scale that is prevalent today is mathematically natural.
+    </p>
+
     <p>
       You might ask, what about 41- or 53-tone scales? They exist: e.g., there is the xenharmonic
 <em>garibaldi</em> temperament (using 41 tones) and a <em>generalized keyboard hamonium</em> with 53 notes to an octave constructed in 1876 by Robert Boranquet <xref ref="helmholtz"/>.
-    </p>
     </p>
   </subsection>
 
