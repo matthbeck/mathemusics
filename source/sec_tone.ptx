@@ -1,6 +1,9 @@
 <section xml:id="sec_tone">
   <title>Tone, Pitch, Frequency, and <m>\ZZ_{ 12 }</m> </title>
   <p>
+    A useful index of sorts on all kinds of musical and acoustic terms is <url href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/> (based on <xref ref="truax"/>). 
+  </p>
+  <p>
     It is a short step to model, say,
     a twelve-note scale as <m>\ZZ_{ 12 }</m>
     (see <xref ref="fig_pianokeys">Figure</xref>),
