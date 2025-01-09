@@ -1,20 +1,22 @@
 <section xml:id="sec_tone">
   <title>Tone, Pitch, Frequency, and <m>\ZZ_{ 12 }</m> </title>
   <p>
-    A single sound played on some musical instrument is a <em>tone</em>.
-    If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a
-(fundamental) <em>frequency</em>, measured in hertz (Hz). E.g., a concert A has 440 Hz.
-    When musicians give a tone a name (we just named a concert A), we call this the <em>pitch</em>. A
-<em>scale</em> is an ordering of a system of pitches.
+    We need a bit of musical language to get started.
     (A useful index of sorts on all kinds of musical and acoustic terms is <url href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/>; it is based on <xref ref="truax"/>.)
   </p>
   <p>
-    An actual tone has, in fact, many frequencies: its fundamental frequency (which determines the
-pitch of the tone) and its <em>harmonic spectrum</em>, consisting of positive integer multiple of the
-fundamental frequency. The relative intensity of these harmonics are, for the most part, responsible
-for the tone quality; e.g., different instruments will have different harmonic spectra. (Instruments
-also feature resonating frequencies that are not integer multiples of the fundamental; these are
-called <em>partials</em>. They play a large role, e.g., in bells and percussion instruments.)
+    A single sound played on some musical instrument is a <em>tone</em>.
+    If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a
+<em>(fundamental) frequency</em>, measured in hertz (Hz). E.g., a concert A has 440 Hz.
+    When musicians give a tone a name (we just named a concert A, also known as A4), we call this the <em>pitch</em> of the tone. A <em>scale</em> is an ordering of a system of pitches.
+  </p>
+  <p>
+    An <em>interval</em> consists of two tones/pitches. If the frequencies of the two tones have the
+ratio 2:1, we call the interval an <em>octave</em>. International pitch notation uses the same letter
+for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at
+880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <em>pitch
+class</em> and can be denoted by a single letter (e.g., A). Pitch classes are, viewed mathematically,
+equivalence classes.
   </p>
   <p>
     It is a short step to model, say,
@@ -26,4 +28,13 @@ called <em>partials</em>. They play a large role, e.g., in bells and percussion 
     <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>. <url href="https://commons.wikimedia.org/wiki/File:Piano-full-en.svg" visual="figure credit"/></caption>
     <image width="83%" source="images/pianokeys.png"/>
   </figure>
+  <p>
+    A tone actually comes with many frequencies: its fundamental frequency (which determines the
+pitch of the tone) and its <em>harmonic spectrum</em>, consisting of positive integer multiple of the
+fundamental frequency. E.g., the first and second harmonic of a given tone will form an octave.
+The relative intensity of these harmonics are, for the most part, responsible
+for the tone quality; e.g., different instruments will have different harmonic spectra. (Instruments
+also feature resonating frequencies that are not integer multiples of the fundamental; these are
+called <em>partials</em>. They play a large role, e.g., in bells and percussion instruments.)
+  </p>
 </section>
