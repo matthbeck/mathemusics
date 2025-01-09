@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2",
   "title": "Tone, Pitch, Frequency, and <span class=\"process-math\">\\(\\ZZ_{ 12 }\\)<\/span>",
-  "body": " Tone, Pitch, Frequency, and   A useful index of sorts on all kinds of musical and acoustic terms is (based on ).  It is a short step to model, say, a twelve-note scale as (see Figure ), and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.   My favorite depiction of . [Figure credit: Wikimedia Commons, Piano-full-en.svg]    "
+  "body": " Tone, Pitch, Frequency, and   A single sound played on some musical instrument is a tone . If you know some physics\/acoustics, then you know each tone has a sound wave, which in turn has a (fundamental) frequency , measured in hertz (Hz). E.g., a concert A has 440 Hz. When musicians give a tone a name (we just named a concert A), we call this the pitch . A scale is an ordering of a system of pitches. (A useful index of sorts on all kinds of musical and acoustic terms is ; it is based on .)  An actual tone has, in fact, many frequencies: its fundamental frequency (which determines the pitch of the tone) and its harmonic spectrum , consisting of positive integer multiple of the fundamental frequency. The relative intensity of these harmonics are, for the most part, responsible for the tone quality; e.g., different instruments will have different harmonic spectra. (Instruments also feature resonating frequencies that are not integer multiples of the fundamental; these are called partials . They play a large role, e.g., in bells and percussion instruments.)  It is a short step to model, say, a twelve-note scale as (see Figure ), and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.   My favorite depiction of .    "
 },
 {
   "id": "fig_pianokeys",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "2.1",
   "title": "",
-  "body": " My favorite depiction of . [Figure credit: Wikimedia Commons, Piano-full-en.svg]   "
+  "body": " My favorite depiction of .   "
 },
 {
   "id": "sec_scales",
