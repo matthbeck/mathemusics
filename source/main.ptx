@@ -74,6 +74,7 @@
           <department>Department of Mathematics, SF State</department>
           <institution><url href="https://matthbeck.github.io/" visual="matthbeck.github.io"/></institution>
         </author>
+        <copyright>Matthias Beck</copyright>
       </titlepage>
     </frontmatter>
     <xi:include href="./sec_intro.ptx"/>
