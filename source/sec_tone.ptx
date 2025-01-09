@@ -15,8 +15,8 @@
 ratio 2:1, we call the interval an <em>octave</em>. International pitch notation uses the same letter
 for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at
 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <em>pitch
-class</em> and can be denoted by a single letter (e.g., A). Pitch classes are, viewed mathematically,
-equivalence classes.
+class</em> and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are
+wonderful examples of equivalence classes.
   </p>
   <p>
     It is a short step to model, say,
@@ -33,8 +33,6 @@ equivalence classes.
 pitch of the tone) and its <em>harmonic spectrum</em>, consisting of positive integer multiple of the
 fundamental frequency. E.g., the first and second harmonic of a given tone will form an octave.
 The relative intensity of these harmonics are, for the most part, responsible
-for the tone quality; e.g., different instruments will have different harmonic spectra. (Instruments
-also feature resonating frequencies that are not integer multiples of the fundamental; these are
-called <em>partials</em>. They play a large role, e.g., in bells and percussion instruments.)
+for the tone quality/timbre; i.e., different instruments will feature different harmonic spectra.<fn>Instruments also feature resonating frequencies that are not integer multiples of the fundamental; these are called <em>partials</em>. They play a large role, e.g., in bells and percussion instruments.</fn>
   </p>
 </section>
