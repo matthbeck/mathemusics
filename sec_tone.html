@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Tones, Frequencies, and \ZZ_{ 12 }</title>
+<title>Tones, frequencies, and \ZZ_{ 12 }</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="article">
@@ -194,9 +194,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="sec_tone.html" class="internal"><span class="codenumber">2</span> <span class="title">Tones, Frequencies, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec_tone.html" class="internal"><span class="codenumber">2</span> <span class="title">Tones, frequencies, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-2" class="internal"><span class="codenumber">2.1</span> <span class="title">Musical concepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-2" class="internal"><span class="codenumber">2.1</span> <span class="title">A few musical concepts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-3" class="internal"><span class="codenumber">2.2</span> <span class="title">The harmonic spectrum</span></a></div></li>
 </ul>
 </li>
@@ -214,13 +214,13 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_tone"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2</span><span class="space"> </span><span class="title">Tones, Frequencies, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2</span><span class="space"> </span><span class="title">Tones, frequencies, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span>
 </h2>
 <section class="subsection" id="sec_tone-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Musical concepts</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">A few musical concepts</span>
 </h3>
 <div class="para" id="sec_tone-2-2">We need a bit of musical language to get started. (A useful index of sorts on all kinds of musical and acoustic terms is <a class="external" href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" target="_blank"><code class="code-inline tex2jax_ignore">here</code></a>; it is based on <a href="root-1-2-7-2.html#truax" class="xref" data-knowl="./knowl/xref/truax.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 14">[14]</a>.)</div>
-<div class="para" id="sec_tone-2-3">A single sound played on some musical instrument is a <em class="emphasis">tone</em>. If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a <em class="emphasis">(fundamental) frequency</em>, measured in hertz (Hz). E.g., a concert A has 440 Hz. When musicians give a tone a name (we just named a concert A, also known as A4), we call this the <em class="emphasis">pitch</em> of the tone. A <em class="emphasis">scale</em> is an ordering of a system of pitches.</div>
+<div class="para" id="sec_tone-2-3">A single sound played on some musical instrument (or sung by a human voice) is a tone. If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a <em class="emphasis">(fundamental) frequency</em>, measured in hertz (Hz). E.g., a concert A has 440 Hz. When musicians give a tone a name (we just named a concert A, also known as A4), we call this the <em class="emphasis">pitch</em> of the tone. A <em class="emphasis">scale</em> is an ordering of a system of pitches.</div>
 <div class="para" id="sec_tone-2-4">An <em class="emphasis">interval</em> consists of two tones/pitches. If the frequencies of the two tones have the ratio 2:1, we call the interval an <em class="emphasis">octave</em>. International pitch notation uses the same letter for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <em class="emphasis">pitch class</em> and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are wonderful examples of equivalence classes.</div>
 <div class="para" id="sec_tone-2-5">Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can multiply the frequency of a given tone by <span class="process-math">\(\frac 3 2\)</span> to reach another tone (creating an interval of a <em class="emphasis">perfect fifth</em>); to reach the octave above the original tone, we can multiply the frequency again by <span class="process-math">\(\frac 4 3\text{.}\)</span>
 </div>
