@@ -1,5 +1,7 @@
 <section xml:id="sec_tone">
-  <title>Tone, Pitch, Frequency, and <m>\ZZ_{ 12 }</m> </title>
+  <title>Tones, Frequencies, and <m>\ZZ_{ 12 }</m> </title>
+  <subsection>
+    <title>Musical concepts</title>
   <p>
     We need a bit of musical language to get started.
     (A useful index of sorts on all kinds of musical and acoustic terms is <url href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/>; it is based on <xref ref="truax"/>.)
@@ -19,6 +21,10 @@ class</em> and can be denoted by a single letter (e.g., A). Viewed mathematicall
 wonderful examples of equivalence classes.
   </p>
   <p>
+    Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of
+the tone, moving down an octave means halving it. 
+  </p>
+  <p>
     It is a short step to model, say,
     a twelve-note scale as <m>\ZZ_{ 12 }</m>
     (see <xref ref="fig_pianokeys">Figure</xref>),
@@ -28,6 +34,10 @@ wonderful examples of equivalence classes.
     <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>. <url href="https://commons.wikimedia.org/wiki/File:Piano-full-en.svg" visual="figure credit"/></caption>
     <image width="83%" source="images/pianokeys.png"/>
   </figure>
+  </subsection>
+
+  <subsection>
+    <title>The harmonic spectrum</title>
   <p>
     A tone actually comes with many frequencies: its fundamental frequency (which determines the
 pitch of the tone) and its <em>harmonic spectrum</em>, consisting of positive integer multiple of the
@@ -35,4 +45,5 @@ fundamental frequency. E.g., the first and second harmonic of a given tone will 
 The relative intensity of these harmonics are, for the most part, responsible
 for the tone quality/timbre; i.e., different instruments will feature different harmonic spectra.<fn>Instruments also feature resonating frequencies that are not integer multiples of the fundamental; these are called <em>partials</em>. They play a large role, e.g., in bells and percussion instruments.</fn>
   </p>
+  </subsection>
 </section>
