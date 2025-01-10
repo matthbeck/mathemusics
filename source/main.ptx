@@ -68,17 +68,21 @@
   <article>
     <title>Mathemusics</title>
     <frontmatter>
-      <titlepage>
         <author>
           <personname>Matthias Beck</personname>
           <department>Department of Mathematics, SF State</department>
           <institution><url href="https://matthbeck.github.io/" visual="matthbeck.github.io"/></institution>
         </author>
+        <website>
+            <url href="http://abstract.pugetsound.edu" visual="abstract.pugetsound.edu"/>
+        </website>
         <copyright>
             <year>2025</year>
             <holder>Matthias Beck</holder>
         </copyright>
-      </titlepage>
+    <titlepage>
+        <titlepage-items/>
+    </titlepage>
     </frontmatter>
     <xi:include href="./sec_intro.ptx"/>
     <xi:include href="./sec_tone.ptx"/>
