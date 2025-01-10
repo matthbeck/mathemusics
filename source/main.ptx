@@ -66,8 +66,9 @@
 </latex-image-preamble>
   </docinfo>
   <article>
+    <title>Mathemusics</title>
     <frontmatter>
-      <title>Mathemusics</title>
+      <bibinfo>
         <author>
           <personname>Matthias Beck</personname>
           <department>Department of Mathematics, SF State</department>
@@ -80,6 +81,7 @@
             <year>2025</year>
             <holder>Matthias Beck</holder>
         </copyright>
+      </bibinfo>
     <titlepage>
         <titlepage-items/>
     </titlepage>
