@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Front Matter",
   "number": "",
   "title": "Front Matter",
-  "body": "Matthias Beck Department of Mathematics, SF State   "
+  "body": " Matthias Beck Department of Mathematics, SF State     copyright     "
 },
 {
   "id": "sec_intro",
