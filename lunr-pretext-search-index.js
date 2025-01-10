@@ -1,13 +1,13 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "root-1-2-2",
+  "id": "root-1-2-1",
   "level": "1",
-  "url": "root-1-2-2.html",
+  "url": "root-1-2-1.html",
   "type": "Front Matter",
   "number": "",
-  "title": "Front Matter",
-  "body": " Matthias Beck Department of Mathematics, SF State     copyright     "
+  "title": "Mathemusics",
+  "body": " Mathemusics  Matthias Beck Department of Mathematics, SF State     copyright     "
 },
 {
   "id": "sec_intro",
@@ -136,18 +136,18 @@ var ptx_lunr_docs = [
   "body": " Three sample equivalence classes.   "
 },
 {
-  "id": "root-1-2-7-1",
+  "id": "root-1-2-6-1",
   "level": "1",
-  "url": "root-1-2-7-1.html",
+  "url": "root-1-2-6-1.html",
   "type": "Acknowledgements",
   "number": "",
   "title": "Acknowledgements",
   "body": " We thank the PreTeXt support group, in particular David Austin and David Farmer, for sharing their wisdom.  "
 },
 {
-  "id": "root-1-2-7-2",
+  "id": "root-1-2-6-2",
   "level": "1",
-  "url": "root-1-2-7-2.html",
+  "url": "root-1-2-6-2.html",
   "type": "References",
   "number": "",
   "title": "Bibliography",
