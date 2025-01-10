@@ -29,15 +29,29 @@ the frequency again by <m>\frac 4 3</m>.<fn>The second thus created interval is 
 forth</em>.</fn>
   </p>
   <p>
-    It is a short step to model, say,
-    a twelve-note scale as <m>\ZZ_{ 12 }</m>
-    (see <xref ref="fig_pianokeys">Figure</xref>),
-    and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
+    In Chapter <xref ref="sec_scales"/>, we will discuss how one constructs actual musical scales;
+for now we want to pre-process this with an abstract mathematical model.
+We will make the crucial assumption that a scale has a periodic character governed by octaves, in the
+sense that, if we know the frequencies of the tones within a given octave, the corresponding tones in
+the following octave will have exactly double those frequencies. Thus, if a scale features
+<m>n</m>tones within one octave, we can compute the frequency of any tone in the scale if we know the
+frequencies of these <m>n</m>tones.
   </p>
   <figure xml:id="fig_pianokeys">
     <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>. <url href="https://commons.wikimedia.org/wiki/File:Piano-full-en.svg" visual="figure credit"/></caption>
     <image width="83%" source="images/pianokeys.png"/>
   </figure>
+  <p>
+    As an example, consider the black keys on a piano; they form what's known as a <em>pentatonic
+scale</em>. Start at your favorite F<m>\sh</m> and
+pentatonic and a heptatonic scale 
+  </p>
+  <p>
+    It is a short step to model, say,
+    a twelve-note scale as <m>\ZZ_{ 12 }</m>
+    (see <xref ref="fig_pianokeys">Figure</xref>),
+    and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
+  </p>
   </subsection>
 
   <subsection>
