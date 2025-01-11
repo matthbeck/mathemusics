@@ -23,8 +23,8 @@ wonderful examples of equivalence classes.
   <p>
     Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of
 the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can
-multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone<fn>This creates an
-interval of what musicians call a <em>perfect fifth</em></fn>; to reach the octave above the original tone, we can multiply
+multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone;<fn>This creates an
+interval of what musicians call a <em>perfect fifth</em></fn> to reach the octave above the original tone, we can multiply
 the frequency again by <m>\frac 4 3</m>.<fn>The second thus created interval is a <em>perfect
 forth</em>.</fn>
   </p>
@@ -43,8 +43,7 @@ frequencies of these <m>n</m>tones.
   </figure>
   <p>
     As an example, consider the black keys on a piano; they form what's known as a <em>pentatonic
-scale</em>. Start at your favorite F<m>\sh</m> and
-pentatonic and a heptatonic scale 
+scale</em>. Start at your favorite <m>F\sh</m> and pentatonic and a heptatonic scale 
   </p>
   <p>
     It is a short step to model, say,
