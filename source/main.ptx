@@ -48,7 +48,7 @@
 \newcommand{\bzero}{\mathbf{0}}
 \newcommand{\bone}{\mathbf{1}}
 \newcommand{\rat}{\!\! : \!\!}
-\newcommand{\sh}{$\sharp$}
+\newcommand{\sh}{<m>\sharp</m>}
 \newcommand{\fl}{$\flat$}
 \newcommand{\newreptheorem}[2]{}
 </macros>
