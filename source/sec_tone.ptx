@@ -1,11 +1,11 @@
 <section xml:id="sec_tone">
   <title>Tones, frequencies, and <m>\ZZ_{ 12 }</m> </title>
-  <subsection>
-    <title>A few musical concepts</title>
   <p>
     We need a bit of musical language to get started.
     (A useful index of sorts on all kinds of musical and acoustic terms is <url href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/>; it is based on <xref ref="truax"/>.)
   </p>
+  <subsection>
+    <title>A few musical concepts</title>
   <p>
     A single sound played on some musical instrument (or sung by a human voice) is a <term>tone</term>.
     If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a
