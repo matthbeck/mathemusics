@@ -35,22 +35,29 @@ We will make the crucial assumption that a scale has a periodic character govern
 sense that, if we know the frequencies of the tones within a given octave, the corresponding tones in
 the following octave will have exactly double those frequencies. Thus, if a scale features
 <m>n</m> tones within one octave, we can compute the frequency of any tone in the scale if we know the
-frequencies of these <m>n</m>tones.
+frequencies of these <m>n</m> tones.
   </p>
   <figure xml:id="fig_pianokeys">
     <caption>My favorite depiction of <m>\ZZ_{ 12 }</m>. <url href="https://commons.wikimedia.org/wiki/File:Piano-full-en.svg" visual="figure credit"/></caption>
     <image width="83%" source="images/pianokeys.png"/>
   </figure>
   <p>
-    As an example, consider the black keys on a piano; they form an instance of what's known as a <em>pentatonic scale</em>. Start at your favorite F<m>\sharp</m>, and five black keys later you will end up at another F<m>\sharp</m>, one octave higher. So for a pentatonic scale, <m>n = 5</m>.
+    As an example, consider the black keys on a piano (see <xref ref="fig_pianokeys">Figure</xref>);
+they form an instance of what's known as a <em>pentatonic scale</em>. Start at your favorite
+F<m>\sharp</m>, and five black keys later you will end up at another F<m>\sharp</m>, one octave
+higher. So for a pentatonic scale, <m>n = 5</m>, and the frequencies of any consecutive
+F<m>\sharp</m>, G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> determine the
+whole scale.
+  </p>
+  <p>
 Similarly, the white keys form an example of a <em>heptatonic scale</em>, starting at your favorite C, with <m>n = 7</m>.
 As a final example, all keys of the piano form the <em>chromatic scale</em> with <m>n = 12</m>. You
-can start on any note and will hit an octave after 12 steps.
+can start at any key and will hit an octave after twelve steps.
   </p>
   <p>
     It is a short step to model, say,
     a twelve-note scale as <m>\ZZ_{ 12 }</m>
-    (see <xref ref="fig_pianokeys">Figure</xref>),
+    ,
     and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
   </p>
   </subsection>
