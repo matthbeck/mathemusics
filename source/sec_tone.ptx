@@ -48,8 +48,6 @@ F<m>\sharp</m>, and five black keys later you will end up at another F<m>\sharp<
 higher. So for a pentatonic scale, <m>n = 5</m> and the frequencies of any consecutive
 F<m>\sharp</m>, G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> determine the
 frequency of the whole scale.
-  </p>
-  <p>
 Similarly, the white keys form an example of a <em>heptatonic scale</em>, with <m>n = 7</m>.
 As a final example, all keys of the piano form the <em>chromatic scale</em>, with <m>n = 12</m>.
 A musician will note a crucial difference between the first two scales and the chromatic one: the
@@ -57,10 +55,9 @@ latter consists entirely of semitone steps, whereas the two former scales have s
 some semitones, some whole tones, and some minor thirds. 
   </p>
   <p>
-    It is a short step to model, say,
-    a twelve-note scale as <m>\ZZ_{ 12 }</m>
-    ,
-    and so these mathematical aspects of chords are independent of the actual frequency ratios of the scale.
+    It is a short step to model a scale with <m>n</m> notes in an octave with
+    <m>\ZZ_{ n } := \{ 0, 1, 2, \dots, n \}</m> as a labeling of base scale (such as F<m>\sharp</m>,
+G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> in our pentatonic example).
   </p>
   </subsection>
 
