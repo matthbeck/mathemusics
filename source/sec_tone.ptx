@@ -45,13 +45,13 @@ frequencies of these <m>n</m> tones.
     As an example, consider the black keys on a piano (see <xref ref="fig_pianokeys">Figure</xref>);
 they form an instance of what's known as a <em>pentatonic scale</em>. Start at your favorite
 F<m>\sharp</m>, and five black keys later you will end up at another F<m>\sharp</m>, one octave
-higher. So for a pentatonic scale, <m>n = 5</m>, and the frequencies of any consecutive
+higher. So for a pentatonic scale, <m>n = 5</m> and the frequencies of any consecutive
 F<m>\sharp</m>, G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> determine the
 frequency of the whole scale.
   </p>
   <p>
 Similarly, the white keys form an example of a <em>heptatonic scale</em>, with <m>n = 7</m>.
-As a final example, all keys of the piano form the <em>chromatic scale</em> with <m>n = 12</m>.
+As a final example, all keys of the piano form the <em>chromatic scale</em>, with <m>n = 12</m>.
 A musician will note a crucial difference between the first two scales and the chromatic one: the
 latter consists entirely of semitone steps, whereas the two former scales have steps consisting of
 some semitones, some whole tones, and some minor thirds. 
