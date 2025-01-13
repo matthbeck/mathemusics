@@ -4,6 +4,37 @@
     The mathematics of musical scales and, by extension,
     intervals between two notes has been extensively studied
     (see, e.g.,<nbsp/><xref ref="cladertwelvetones,schettlerxenharmonic"/> for two recent papers).
+    Here we present various constructions; all are for a scale in 12 notes in an octave (with
+frequency ration 2:1) and the existence of a <term>perfect fifth</term> with frequency ratio 3:2. In
+our simple mathematical model, the perfect fifth corresponds to the number <m>7</m> in <m>\ZZ_{ 12
+}</m>. 
+  </p>
+  <subsection>
+    <title>The Pythagorean Scale</title>
+    <p>
+      Our first construction takes the fact that <m>7</m> generates <m>\ZZ_{ 12 }</m> quite
+literally. Again, we assign <m>7</m> the frequency <m>\frac 3 2</m>. Since <m>7 + 7 = 2 \in \ZZ_{ 12
+}</m>, the frequency assigned <m>2</m> (the <term>whole tone</term>) needs to be <m>(\frac 3 2)^2</m>
+scaled down by an octave, that is, <m>frac 9 8</m>.
+Moving up by another perfect fifth, we reach <m>9 = 2 + 7 \in \ZZ_{ 12 }</m>, the <term>minor
+sixth</term>, with frequency <m>\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }</m>.
+The next step <m> 4 = 9 + 7 \in \ZZ_{ 12 }</m> again needs its frequency scaled down by an octave,
+i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot 1 2 = \frac{ 81 }{ 64 }</m>, the frequency for the
+<term>major third</term>.
+Stepping up one more fifth reaches <m>11 = 4 + 7 \in \ZZ_{ 12 }</m>, the <term>major seventh</term>,
+with frequency <m>\frac{ 81 }{ 64 } \cdot frac 3 2 = \frac{ 243 }{ 128 } </m>. 
+    </p>
+    <p>
+      Next we make use of the fact that <m>5 = -7 \in \ZZ_{ 12 }</m>, the <term>perfect forth</term>,
+which thus gets assigned the frequency <m>\frac 4 3</m> (because <m>\frac 3 2 \cdot \frac 4 3 =
+2</m>). From here we now move <em>down</em> a fifth to <m>10 = 5 - 7 \in \ZZ_{ 12 }</m>, the
+<term>minor seventh</term>, whose frequency needs to moved up an octave: <m>\frac 4 3 \cdot \frac 2 3
+\cdot 2 = \frac{ 16 }{ 9 }</m>. The next fifth down reaches <m>3 = 10 - 7 \in \ZZ_{ 12 }</m>, the
+<term>minor third</term>, with frequency <m>\frac{ 16 }{ 9 } \cdot 2 3 = \frac{ 32 }{ 27 }</m>. 
+    </p>
+  </subsection>
+
+  <p>
     A key feature of an interval is the frequency ratio between the two notes.
     Vastly simplified
     (and one has to be careful, for various reasons),

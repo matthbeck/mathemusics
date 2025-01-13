@@ -56,8 +56,9 @@ some semitones, some whole tones, and some minor thirds.
   </p>
   <p>
     It is a short step to model a scale with <m>n</m> notes in an octave with
-    <m>\ZZ_{ n } := \{ 0, 1, 2, \dots, n \}</m> as a labeling of base scale (such as F<m>\sharp</m>,
-G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> in our pentatonic example).
+    <m>\ZZ_{ n } := \{ 0, 1, 2, \dots, n-1 \}</m> as a labeling of a base scale (such as
+F<m>\sharp</m>, G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> in our pentatonic
+example), the assigned frequencies of which will determine those of the entire scale.
   </p>
   </subsection>
 
