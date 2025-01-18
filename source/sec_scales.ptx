@@ -19,7 +19,7 @@ scaled down by an octave, that is, <m>\frac 9 8</m>.
 Moving up by another perfect fifth, we reach <m>2 + 7 = 9 \in \ZZ_{ 12 }</m>, the <term>major
 sixth</term>, with frequency <m>\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }</m>.
 The next step <m>9 + 7 = 4 \in \ZZ_{ 12 }</m> again needs its frequency scaled down by an octave,
-i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot 1 2 = \frac{ 81 }{ 64 }</m>, the frequency for the
+i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot \frac 1 2 = \frac{ 81 }{ 64 }</m>, the frequency for the
 <term>major third</term>.
 Stepping up one more fifth reaches <m>4 + 7 = 11 \in \ZZ_{ 12 }</m>, the <term>major seventh</term>,
 with frequency <m>\frac{ 81 }{ 64 } \cdot \frac 3 2 = \frac{ 243 }{ 128 }</m>. One more step yields
@@ -40,7 +40,7 @@ One more step yield <m>3 - 7 = 8 \in \ZZ_{ 12 }</m>, the <term>minor sixth</term
 The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xref>.
     </p>
   <table xml:id="tab_pythagoraenscale">
-    <title>The frequency ratios of the Pythagorean scale</title>
+    <title>The frequency ratios of the Pythagorean scale.</title>
     <tabular halign="center">
       <row bottom="minor">
         <cell>0</cell>
@@ -56,7 +56,7 @@ The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xre
         <cell>10</cell>
         <cell>11</cell>
       </row>
-      <row>
+      <row bottom="minor">
         <cell>C</cell>
         <cell>C<m>\sharp</m></cell>
         <cell>D</cell>
@@ -95,6 +95,8 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
 
 
   </subsection>
+  <subsection>
+    <title>Just Scales</title>
 
   <p>
     A key feature of an interval is the frequency ratio between the two notes.
@@ -323,6 +325,10 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
     <image width="93%" source="images/classicwinners.png"/>
   </figure>
 
+  </subsection>
+  <subsection>
+    <title>Equal-tempered scales and continued fractions</title>
+  </subsection>
   <subsection>
     <title>Why 12?</title>
     <p>
