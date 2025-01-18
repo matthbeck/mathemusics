@@ -37,18 +37,12 @@ One more step yield <m>3 - 7 = 8 \in \ZZ_{ 12 }</m>, the <term>minor sixth</term
 <m>\frac{ 32 }{ 27 } \cdot \frac 2 3 \cdot 2 = \frac{ 128 }{ 81 }</m>. Finally, <m>8 - 7 = 1  \in
 \ZZ_{ 12 }</m> gives the <term>semitone</term> with frequency <m>\frac{ 128 }{ 81 } \cdot \frac 2 3 =
 \frac{ 256 }{ 243 }</m>. 
+The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xref>.
     </p>
-    <p>
-      At this point, we can see the frequency problem of the circle of fifths in action: the next
-step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
-by moving up by five fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
-\cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> (ever so slightly: the difference is about 0.02).
-    </p>
-
   <table xml:id="tab_pythagoraenscale">
     <title>The frequency ratios of the Pythagorean scale</title>
-    <tabular>
-      <row>
+    <tabular halign="center">
+      <row bottom="minor">
         <cell>0</cell>
         <cell>1</cell>
         <cell>2</cell>
@@ -92,6 +86,13 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
       </row>
     </tabular>
   </table>
+    <p>
+      At this point, we can see the frequency problem of the circle of fifths in action: the next
+step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
+by moving up by five fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
+\cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> (ever so slightly: the difference is about 0.02).
+    </p>
+
 
   </subsection>
 
