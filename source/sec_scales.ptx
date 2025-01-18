@@ -23,8 +23,8 @@ i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot 1 2 = \frac{ 81 }{ 64 }</m>, th
 <term>major third</term>.
 Stepping up one more fifth reaches <m>4 + 7 = 11 \in \ZZ_{ 12 }</m>, the <term>major seventh</term>,
 with frequency <m>\frac{ 81 }{ 64 } \cdot \frac 3 2 = \frac{ 243 }{ 128 }</m>. One more step yields
-<m>11 + 7 = 6 \in \ZZ_{ 12 }</m>, the <term>triad</term>, with frequency <m>\frac{ 243 }{ 128 } \cdot
-3 2 \cdot \frac 1 2 = \frac{ 729 }{ 512 }</m> 
+<m>11 + 7 = 6 \in \ZZ_{ 12 }</m>, the <term>tritone</term>, with frequency <m>\frac{ 243 }{ 128 } \cdot
+\frac 3 2 \cdot \frac 1 2 = \frac{ 729 }{ 512 }</m> 
     </p>
     <p>
       Next we make use of the fact that <m>5 = -7 \in \ZZ_{ 12 }</m>, the <term>perfect forth</term>,
@@ -40,10 +40,9 @@ One more step yield <m>3 - 7 = 8 \in \ZZ_{ 12 }</m>, the <term>minor sixth</term
     </p>
     <p>
       At this point, we can see the frequency problem of the circle of fifths in action: the next
-step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the triad, which we already reached
+step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
 by moving up by five fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
-\cdot 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> (ever so
-slightly: the difference is about 0.02).
+\cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> (ever so slightly: the difference is about 0.02).
     </p>
 
   <table xml:id="tab_pythagoraenscale">
@@ -78,18 +77,18 @@ slightly: the difference is about 0.02).
         <cell>B</cell>
       </row>
       <row>
-        <cell><m>1 \rat 1</m></cell>
-        <cell><m>16 : 15</m></cell>
-        <cell><m>9 \rat 8</m></cell>
-        <cell><m>6 \rat 5</m></cell>
-        <cell><m>5 \rat 4</m></cell>
-        <cell><m>4 \rat 3</m></cell>
-        <cell><m>45 \rat 32</m></cell>
-        <cell><m>3 \rat 2</m></cell>
-        <cell><m>8 \rat 5</m></cell>
-        <cell><m>5 \rat 3</m></cell>
-        <cell><m>16 \rat 9</m></cell>
-        <cell><m>15 \rat 8</m></cell>
+        <cell><m>\frac 1 1</m></cell>
+        <cell><m>\frac{ 256 }{ 243 }</m></cell>
+        <cell><m>\frac 9 8</m></cell>
+        <cell><m>\frac{ 32 }{ 27 }</m></cell>
+        <cell><m>\frac{ 81 }{ 64 }</m></cell>
+        <cell><m>\frac 4 3</m></cell>
+        <cell><m>\frac{ 729 }{ 512 }</m></cell>
+        <cell><m>\frac 3 2</m></cell>
+        <cell><m>\frac{ 128 }{ 81 }</m></cell>
+        <cell><m>\frac{ 27 }{ 16 }</m></cell>
+        <cell><m>\frac{ 16 }{ 9 }</m></cell>
+        <cell><m>\frac{ 243 }{ 128 }</m></cell>
       </row>
     </tabular>
   </table>
