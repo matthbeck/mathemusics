@@ -114,56 +114,56 @@ musical terms.
 
     <table xml:id="tab_intervals">
       <title>Intervals.</title>
-      <tabular halign="center">
+      <tabular>
         <row>
           <cell halign="right">0</cell>
           <cell halign="left">unison</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">1</cell>
           <cell halign="left">semitone</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">2</cell>
           <cell halign="left">whole tone</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">3</cell>
           <cell halign="left">minor third</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">4</cell>
           <cell halign="left">major third</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">5</cell>
           <cell halign="left">(perfect) forth</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">6</cell>
           <cell halign="left">tritone</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">7</cell>
           <cell halign="left">(perfect) fifth</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">8</cell>
           <cell halign="left">minor sixth</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">9</cell>
           <cell halign="left">major sixth</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">10</cell>
           <cell halign="left">minor seventh</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">11</cell>
           <cell halign="left">major seventh</cell>
-        <row>
         </row>
+        <row>
           <cell halign="right">12</cell>
           <cell halign="left">octave</cell>
         </row>
