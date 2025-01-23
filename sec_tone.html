@@ -214,7 +214,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec_tone.html" class="internal"><span class="codenumber">2</span> <span class="title">Tones, frequencies, and <span class="process-math">\(\ZZ_{ 12 }\)</span></span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-3" class="internal"><span class="codenumber">2.1</span> <span class="title">A few musical concepts</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-4" class="internal"><span class="codenumber">2.2</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-4" class="internal"><span class="codenumber">2.2</span> <span class="title">Interval arithmetic</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_tone.html#sec_tone-5" class="internal"><span class="codenumber">2.3</span> <span class="title">The harmonic spectrum</span></a></div></li>
 </ul>
 </li>
@@ -244,17 +244,17 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">A few musical concepts</span>
 </h3>
 <div class="para" id="sec_tone-3-2">A single sound played on some musical instrument (or sung by a human voice) is a <dfn class="terminology">tone</dfn>. If you know some physics/acoustics, then you know each tone has a sound wave, which in turn has a <dfn class="terminology">(fundamental) frequency</dfn>, measured in hertz (Hz). E.g., a concert A has 440 Hz. When musicians give a tone a name (we just named a concert A, also known as A4), we call this the <dfn class="terminology">pitch</dfn> of the tone. A <dfn class="terminology">scale</dfn> is an ordering of a system of pitches.</div>
-<div class="para" id="sec_tone-3-3">An <dfn class="terminology">interval</dfn> consists of two tones/pitches. If the frequencies of the two tones have the ratio 2:1, we call the interval an <dfn class="terminology">octave</dfn>. International pitch notation uses the same letter for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <dfn class="terminology">pitch class</dfn> and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are wonderful examples of equivalence classes.</div>
-<div class="para" id="sec_tone-3-4">Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can multiply the frequency of a given tone by <span class="process-math">\(\frac 3 2\)</span> to reach another tone;<details class="ptx-footnote" aria-live="polite" id="sec_tone-3-4-2"><summary class="ptx-footnote__number" title="Footnote 2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec_tone-3-4-2">This creates an interval of what musicians call a <em class="emphasis">perfect fifth</em>
-</div></details> to reach the octave above the original tone, we can multiply the frequency again by <span class="process-math">\(\frac 4 3\text{.}\)</span><details class="ptx-footnote" aria-live="polite" id="sec_tone-3-4-4"><summary class="ptx-footnote__number" title="Footnote 2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec_tone-3-4-4">The second thus created interval is a <em class="emphasis">perfect forth</em>.</div></details>
+<div class="para" id="sec_tone-3-3">An <dfn class="terminology">interval</dfn> consists of two tones/pitches. If the frequencies of the two tones have the ratio 2:1, we call the interval an <dfn class="terminology">octave</dfn>. International pitch notation uses the same letter for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <dfn class="terminology">pitch class</dfn><details class="ptx-footnote" aria-live="polite" id="sec_tone-3-3-4"><summary class="ptx-footnote__number" title="Footnote 2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec_tone-3-3-4">In music psychology, tones in the same pitch class are said to have the same <dfn class="terminology">chroma</dfn>.</div></details> and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are wonderful examples of equivalence classes.</div>
+<div class="para" id="sec_tone-3-4">Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can multiply the frequency of a given tone by <span class="process-math">\(\frac 3 2\)</span> to reach another tone; to reach the octave above the original tone, we can multiply the frequency again by <span class="process-math">\(\frac 4 3\text{.}\)</span>
 </div>
 <div class="para" id="sec_tone-3-5">In <a href="sec_scales.html" class="internal" title="Section 3: Scales">Section 3</a>, we will discuss how one constructs actual musical scales; for now we want to pre-process this with a (simple) abstract mathematical model. We will make the crucial assumption that a scale has a periodic character governed by octaves, in the sense that, if we know the frequencies of the tones within a given octave, the corresponding tones in the following octave will have exactly double those frequencies. Thus, if a scale features <span class="process-math">\(n\)</span> tones within one octave, we can compute the frequency of any tone in the scale if we know the frequencies of these <span class="process-math">\(n\)</span> tones.</div>
 <figure class="figure figure-like" id="fig_pianokeys"><div class="image-box" style="width: 83%; margin-left: 8.5%; margin-right: 8.5%;"><img src="external/images/pianokeys.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1<span class="period">.</span></span><span class="space"> </span>My favorite depiction of <span class="process-math">\(\ZZ_{ 12 }\text{.}\)</span> <a class="external" href="https://commons.wikimedia.org/wiki/File:Piano-full-en.svg" target="_blank"><code class="code-inline tex2jax_ignore">figure credit</code></a></figcaption></figure><div class="para" id="sec_tone-3-7">As an example, the black keys on a piano (see <a href="sec_tone.html#fig_pianokeys" class="xref" data-knowl="./knowl/xref/fig_pianokeys.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1">Figure 2.1</a>) form an instance of what’s known as a <em class="emphasis">pentatonic scale</em>. Start at your favorite F<span class="process-math">\(\sharp\text{,}\)</span> and five black keys later you will end up at another F<span class="process-math">\(\sharp\text{,}\)</span> one octave higher. So here <span class="process-math">\(n = 5\)</span> and the frequencies of any consecutive F<span class="process-math">\(\sharp\text{,}\)</span> G<span class="process-math">\(\sharp\text{,}\)</span> A<span class="process-math">\(\sharp\text{,}\)</span> C<span class="process-math">\(\sharp\text{,}\)</span> and D<span class="process-math">\(\sharp\)</span> determine the frequency of the whole scale. Similarly, the white keys form an example of a <em class="emphasis">heptatonic scale</em>, with <span class="process-math">\(n = 7\text{.}\)</span> As a final example, all keys of the piano form the <em class="emphasis">chromatic scale</em>, with <span class="process-math">\(n = 12\text{.}\)</span> A musician will note a crucial difference between the first two scales and the chromatic one: the latter consists entirely of semitone steps, whereas the two former scales have steps consisting of some semitones, some whole tones, and some minor thirds.</div>
 <div class="para" id="sec_tone-3-8">It is a short step to model a scale with <span class="process-math">\(n\)</span> notes in an octave with <span class="process-math">\(\ZZ_{ n } := \{ 0, 1, 2, \dots, n-1 \}\)</span> as a labeling of a base scale (such as F<span class="process-math">\(\sharp\text{,}\)</span> G<span class="process-math">\(\sharp\text{,}\)</span> A<span class="process-math">\(\sharp\text{,}\)</span> C<span class="process-math">\(\sharp\text{,}\)</span> and D<span class="process-math">\(\sharp\)</span> in our pentatonic example), the assigned frequencies of which will determine those of the entire scale.</div></section><section class="subsection" id="sec_tone-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Intervals</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Interval arithmetic</span>
 </h3>
-<div class="para" id="sec_tone-4-2">From now one, we will work with a chromatic scale, with 12 tones in an octave. We model it as <span class="process-math">\(\ZZ_{ 12 }\text{,}\)</span> with C as the base note; this is an arbitrary starting point, and so in some sense, we may ignore the second row in <a href="sec_tone.html#tab_z12scale" class="xref" data-knowl="./knowl/xref/tab_z12scale.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.2: The \ZZ_{ 12 } scale.">Table 2.2</a> and simply think of tones (rather, their pitch classes) as elements in <span class="process-math">\(\ZZ_{ 12 }\text{.}\)</span> <figure class="table table-like" id="tab_z12scale"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2<span class="period">.</span></span><span class="space"> </span>The <span class="process-math">\(\ZZ_{ 12 }\)</span> scale.</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="sec_tone-4-2">From now on, we will work with a chromatic scale, with 12 tones in an octave. We model it as <span class="process-math">\(\ZZ_{ 12 }\text{,}\)</span> with C as the base note; this is an arbitrary starting point, and so in a mathematical  sense, we may ignore the second row in <a href="sec_tone.html#tab_z12scale" class="xref" data-knowl="./knowl/xref/tab_z12scale.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.2: The \ZZ_{ 12 } scale.">Table 2.2</a> and simply think of tones (rather, their pitch classes) as elements in <span class="process-math">\(\ZZ_{ 12 }\text{;}\)</span> we will keep featuring this row in tables below for musically inclined readers.</div>
+<figure class="table table-like" id="tab_z12scale"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2<span class="period">.</span></span><span class="space"> </span>The <span class="process-math">\(\ZZ_{ 12 }\)</span> scale.</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines">0</td>
 <td class="c m b1 r0 l0 t0 lines">1</td>
@@ -270,36 +270,59 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r0 l0 t0 lines">11</td>
 </tr>
 <tr>
-<td class="c m b1 r0 l0 t0 lines">C</td>
-<td class="c m b1 r0 l0 t0 lines">C<span class="process-math">\(\sharp\)</span>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+<td class="c m b0 r0 l0 t0 lines">C<span class="process-math">\(\sharp\)</span>
 </td>
-<td class="c m b1 r0 l0 t0 lines">D</td>
-<td class="c m b1 r0 l0 t0 lines">E<span class="process-math">\(\flat\)</span>
+<td class="c m b0 r0 l0 t0 lines">D</td>
+<td class="c m b0 r0 l0 t0 lines">E<span class="process-math">\(\flat\)</span>
 </td>
-<td class="c m b1 r0 l0 t0 lines">E</td>
-<td class="c m b1 r0 l0 t0 lines">F</td>
-<td class="c m b1 r0 l0 t0 lines">F<span class="process-math">\(\sharp\)</span>
+<td class="c m b0 r0 l0 t0 lines">E</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F<span class="process-math">\(\sharp\)</span>
 </td>
-<td class="c m b1 r0 l0 t0 lines">G</td>
-<td class="c m b1 r0 l0 t0 lines">G<span class="process-math">\(\sharp\)</span>
+<td class="c m b0 r0 l0 t0 lines">G</td>
+<td class="c m b0 r0 l0 t0 lines">G<span class="process-math">\(\sharp\)</span>
 </td>
-<td class="c m b1 r0 l0 t0 lines">A</td>
-<td class="c m b1 r0 l0 t0 lines">B<span class="process-math">\(\flat\)</span>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+<td class="c m b0 r0 l0 t0 lines">B<span class="process-math">\(\flat\)</span>
 </td>
-<td class="c m b1 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
 </tr>
-</table></div></figure> literally. Again, we assign <span class="process-math">\(7\)</span> the frequency <span class="process-math">\(\frac 3 2\text{.}\)</span> Since <span class="process-math">\(7 + 7 = 2 \in \ZZ_{ 12
-}\text{,}\)</span> the frequency assigned to <span class="process-math">\(2\)</span> (the <dfn class="terminology">whole tone</dfn>) needs to be <span class="process-math">\((\frac 3 2)^2\)</span> scaled down by an octave, that is, <span class="process-math">\(\frac 9 8\text{.}\)</span> Moving up by another perfect fifth, we reach <span class="process-math">\(2 + 7 = 9 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">major sixth</dfn>, with frequency <span class="process-math">\(\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }\text{.}\)</span> The next step <span class="process-math">\(9 + 7 = 4 \in \ZZ_{ 12 }\)</span> again needs its frequency scaled down by an octave, i.e., <span class="process-math">\(\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot \frac 1 2 = \frac{ 81 }{ 64 }\text{,}\)</span> the frequency for the <dfn class="terminology">major third</dfn>. Stepping up one more fifth reaches <span class="process-math">\(4 + 7 = 11 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">major seventh</dfn>, with frequency <span class="process-math">\(\frac{ 81 }{ 64 } \cdot \frac 3 2 = \frac{ 243 }{ 128 }\text{.}\)</span> One more step yields <span class="process-math">\(11 + 7 = 6 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">tritone</dfn>, with frequency <span class="process-math">\(\frac{ 243 }{ 128 } \cdot
-\frac 3 2 \cdot \frac 1 2 = \frac{ 729 }{ 512 }\)</span>
+</table></div></figure><div class="para" id="sec_tone-4-4">In this model, intervals correspond to differences, and if we care only about pitch classes, we compute these differences in <span class="process-math">\(\ZZ_{ 12 }\text{.}\)</span> <a href="sec_tone.html#tab_intervals" class="xref" data-knowl="./knowl/xref/tab_intervals.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.3: Intervals.">Table 2.3</a> gives the musical terms.</div>
+<figure class="table table-like" id="tab_intervals"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.3<span class="period">.</span></span><span class="space"> </span>Intervals.</figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="r m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">unison</td>
+<td class="r m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">semitone</td>
+<td class="r m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">whole tone</td>
+<td class="r m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">minor third</td>
+<td class="r m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">major third</td>
+<td class="r m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">(perfect) forth</td>
+<td class="r m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">tritone</td>
+<td class="r m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">(perfect) fifth</td>
+<td class="r m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">minor sixth</td>
+<td class="r m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">major sixth</td>
+<td class="r m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">minor seventh</td>
+<td class="r m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines">major seventh</td>
+<td class="r m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">octave</td>
+</tr></table></div></figure><div class="para" id="sec_tone-4-6">We can now see the aforementioned multiplicative behavior of frequencies mirrored in the additive structure of the integers or, if we only care about pitch classes, that of <span class="process-math">\(\ZZ_{ 12
+}\text{.}\)</span> For example, a fifth plus a forth yields an octave (since <span class="process-math">\(7 + 5 = 12\)</span>), and so the respective frequency ratios (<span class="process-math">\(\frac 3 2\)</span> and <span class="process-math">\(\frac 4 3\)</span>) should multiply to <span class="process-math">\(2\text{.}\)</span>
 </div>
-<div class="para" id="sec_tone-4-3">Next we make use of the fact that <span class="process-math">\(5 = -7 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">perfect forth</dfn>, which thus gets assigned the frequency <span class="process-math">\(\frac 4 3\)</span> (because <span class="process-math">\(\frac 3 2 \cdot \frac 4 3 =
-2\)</span>). From here we now move <em class="emphasis">down</em> a fifth to <span class="process-math">\(5 - 7 = 10 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">minor seventh</dfn>, whose frequency needs to moved up an octave: <span class="process-math">\(\frac 4 3 \cdot \frac 2 3
-\cdot 2 = \frac{ 16 }{ 9 }\text{.}\)</span> The next fifth down reaches <span class="process-math">\(10 - 7 = 3 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">minor third</dfn>, with frequency <span class="process-math">\(\frac{ 16 }{ 9 } \cdot \frac 2 3 = \frac{ 32 }{ 27 }\text{.}\)</span> One more step yield <span class="process-math">\(3 - 7 = 8 \in \ZZ_{ 12 }\text{,}\)</span> the <dfn class="terminology">minor sixth</dfn>, with frequency <span class="process-math">\(\frac{ 32 }{ 27 } \cdot \frac 2 3 \cdot 2 = \frac{ 128 }{ 81 }\text{.}\)</span> Finally, <span class="process-math">\(8 - 7 = 1  \in
-\ZZ_{ 12 }\)</span> gives the <dfn class="terminology">semitone</dfn> with frequency <span class="process-math">\(\frac{ 128 }{ 81 } \cdot \frac 2 3 =
-\frac{ 256 }{ 243 }\text{.}\)</span> The resulting scale is summarized in .</div></section><section class="subsection" id="sec_tone-5"><h3 class="heading hide-type">
+<div class="para" id="sec_tone-4-7">As another example, arguing a bit more within <span class="process-math">\(\ZZ_{ 12 }\text{,}\)</span> we can wee that <span class="process-math">\(5\)</span> and <span class="process-math">\(7\)</span> are additive inverses; musically this means, e.g., that moving down a forth is in the same pitch class as moving up a fifth; indeed the two resulting notes are an octave apart.</div></section><section class="subsection" id="sec_tone-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">The harmonic spectrum</span>
 </h3>
-<div class="para" id="sec_tone-5-2">A tone actually comes with many frequencies: its fundamental frequency (which determines the pitch of the tone) and its <dfn class="terminology">harmonic spectrum</dfn>, consisting of positive integer multiple of the fundamental frequency. E.g., the first and second harmonic of a given tone will form an octave. The relative intensity of these harmonics are, for the most part, responsible for the tone quality/timbre; i.e., different instruments will feature different harmonic spectra.<details class="ptx-footnote" aria-live="polite" id="sec_tone-5-2-2"><summary class="ptx-footnote__number" title="Footnote 2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="sec_tone-5-2-2">Instruments also feature resonating frequencies that are not integer multiples of the fundamental; these are called <dfn class="terminology">partials</dfn>. They play a large role, e.g., in bells and percussion instruments.</div></details>
+<div class="para" id="sec_tone-5-2">A tone actually comes with many frequencies: its fundamental frequency (which determines the pitch of the tone) and its <dfn class="terminology">harmonic spectrum</dfn>, consisting of positive integer multiple of the fundamental frequency. E.g., the first and second harmonic of a given tone will form an octave. The relative intensity of these harmonics are, for the most part, responsible for the tone quality/timbre; i.e., different instruments will feature different harmonic spectra.<details class="ptx-footnote" aria-live="polite" id="sec_tone-5-2-2"><summary class="ptx-footnote__number" title="Footnote 2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec_tone-5-2-2">Instruments also feature resonating frequencies that are not integer multiples of the fundamental; these are called <dfn class="terminology">partials</dfn>. They play a large role, e.g., in bells and percussion instruments.</div></details>
 </div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_scales.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
