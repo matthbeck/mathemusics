@@ -17,16 +17,16 @@
 ratio 2:1, we call the interval an <term>octave</term>. International pitch notation uses the same letter
 for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at
 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <term>pitch
-class</term> and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are
+class</term><fn>
+In music psychology, tones in the same pitch class are said to have the same <term>chroma</term>.
+</fn>
+and can be denoted by a single letter (e.g., A). Viewed mathematically, pitch classes are
 wonderful examples of equivalence classes.
   </p>
   <p>
     Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of
 the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can
-multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone;<fn>This creates an
-interval of what musicians call a <em>perfect fifth</em></fn> to reach the octave above the original tone, we can multiply
-the frequency again by <m>\frac 4 3</m>.<fn>The second thus created interval is a <em>perfect
-forth</em>.</fn>
+multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone; to reach the octave above the original tone, we can multiply the frequency again by <m>\frac 4 3</m>.
   </p>
   <p>
     In <xref ref="sec_scales"/>, we will discuss how one constructs actual musical scales;
@@ -63,71 +63,123 @@ example), the assigned frequencies of which will determine those of the entire s
   </subsection>
 
   <subsection>
-    <title>Intervals</title>
+    <title>Interval arithmetic</title>
     <p>
-      From now one, we will work with a chromatic scale, with 12 tones in an octave. We model it as
-      <m>\ZZ_{ 12 }</m>, with C as the base note; this is an arbitrary starting point, and so in some
-sense, we may ignore the second row in <xref ref="tab_z12scale">Table</xref> and simply think of
-tones (rather, their pitch classes) as elements in <m>\ZZ_{ 12 }</m>.
-  <table xml:id="tab_z12scale">
-    <title>The <m>\ZZ_{ 12 }</m> scale.</title>
-    <tabular halign="center">
-      <row bottom="minor">
-        <cell>0</cell>
-        <cell>1</cell>
-        <cell>2</cell>
-        <cell>3</cell>
-        <cell>4</cell>
-        <cell>5</cell>
-        <cell>6</cell>
-        <cell>7</cell>
-        <cell>8</cell>
-        <cell>9</cell>
-        <cell>10</cell>
-        <cell>11</cell>
-      </row>
-      <row bottom="minor">
-        <cell>C</cell>
-        <cell>C<m>\sharp</m></cell>
-        <cell>D</cell>
-        <cell>E<m>\flat</m></cell>
-        <cell>E</cell>
-        <cell>F</cell>
-        <cell>F<m>\sharp</m></cell>
-        <cell>G</cell>
-        <cell>G<m>\sharp</m></cell>
-        <cell>A</cell>
-        <cell>B<m>\flat</m></cell>
-        <cell>B</cell>
-      </row>
-    </tabular>
-  </table>
+      From now on, we will work with a chromatic scale, with 12 tones in an octave. We model it as
+      <m>\ZZ_{ 12 }</m>, with C as the base note; this is an arbitrary starting point, and so in a
+mathematical  sense, we may ignore the second row in <xref ref="tab_z12scale">Table</xref> and simply
+think of tones (rather, their pitch classes) as elements in <m>\ZZ_{ 12 }</m>; we will keep featuring
+this row in tables below for musically inclined readers.
+    </p>
 
-literally. Again, we assign <m>7</m> the frequency <m>\frac 3 2</m>. Since <m>7 + 7 = 2 \in \ZZ_{ 12
-}</m>, the frequency assigned to <m>2</m> (the <term>whole tone</term>) needs to be <m>(\frac 3 2)^2</m>
-scaled down by an octave, that is, <m>\frac 9 8</m>.
-Moving up by another perfect fifth, we reach <m>2 + 7 = 9 \in \ZZ_{ 12 }</m>, the <term>major
-sixth</term>, with frequency <m>\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }</m>.
-The next step <m>9 + 7 = 4 \in \ZZ_{ 12 }</m> again needs its frequency scaled down by an octave,
-i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot \frac 1 2 = \frac{ 81 }{ 64 }</m>, the frequency for the
-<term>major third</term>.
-Stepping up one more fifth reaches <m>4 + 7 = 11 \in \ZZ_{ 12 }</m>, the <term>major seventh</term>,
-with frequency <m>\frac{ 81 }{ 64 } \cdot \frac 3 2 = \frac{ 243 }{ 128 }</m>. One more step yields
-<m>11 + 7 = 6 \in \ZZ_{ 12 }</m>, the <term>tritone</term>, with frequency <m>\frac{ 243 }{ 128 } \cdot
-\frac 3 2 \cdot \frac 1 2 = \frac{ 729 }{ 512 }</m> 
+    <table xml:id="tab_z12scale">
+      <title>The <m>\ZZ_{ 12 }</m> scale.</title>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>10</cell>
+          <cell>11</cell>
+        </row>
+        <row>
+          <cell>C</cell>
+          <cell>C<m>\sharp</m></cell>
+          <cell>D</cell>
+          <cell>E<m>\flat</m></cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>F<m>\sharp</m></cell>
+          <cell>G</cell>
+          <cell>G<m>\sharp</m></cell>
+          <cell>A</cell>
+          <cell>B<m>\flat</m></cell>
+          <cell>B</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In this model, intervals correspond to differences, and if we care only about pitch classes, we
+compute these differences in <m>\ZZ_{ 12 }</m>. <xref ref="tab_intervals">Table</xref> gives the
+musical terms.
+    </p>
+
+    <table xml:id="tab_intervals">
+      <title>Intervals.</title>
+      <tabular halign="center">
+        <row>
+          <cell halign="right">0</cell>
+          <cell halign="left">unison</cell>
+        <row>
+        </row>
+          <cell halign="right">1</cell>
+          <cell halign="left">semitone</cell>
+        <row>
+        </row>
+          <cell halign="right">2</cell>
+          <cell halign="left">whole tone</cell>
+        <row>
+        </row>
+          <cell halign="right">3</cell>
+          <cell halign="left">minor third</cell>
+        <row>
+        </row>
+          <cell halign="right">4</cell>
+          <cell halign="left">major third</cell>
+        <row>
+        </row>
+          <cell halign="right">5</cell>
+          <cell halign="left">(perfect) forth</cell>
+        <row>
+        </row>
+          <cell halign="right">6</cell>
+          <cell halign="left">tritone</cell>
+        <row>
+        </row>
+          <cell halign="right">7</cell>
+          <cell halign="left">(perfect) fifth</cell>
+        <row>
+        </row>
+          <cell halign="right">8</cell>
+          <cell halign="left">minor sixth</cell>
+        <row>
+        </row>
+          <cell halign="right">9</cell>
+          <cell halign="left">major sixth</cell>
+        <row>
+        </row>
+          <cell halign="right">10</cell>
+          <cell halign="left">minor seventh</cell>
+        <row>
+        </row>
+          <cell halign="right">11</cell>
+          <cell halign="left">major seventh</cell>
+        <row>
+        </row>
+          <cell halign="right">12</cell>
+          <cell halign="left">octave</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We can now see the aforementioned multiplicative behavior of frequencies mirrored in the
+additive structure of the integers or, if we only care about pitch classes, that of <m>\ZZ_{ 12
+}</m>. For example, a fifth plus a forth yields an octave (since <m>7 + 5 = 12</m>), and so the
+respective frequency ratios (<m>\frac 3 2</m> and <m>\frac 4 3</m>) should multiply to <m>2</m>.
     </p>
     <p>
-      Next we make use of the fact that <m>5 = -7 \in \ZZ_{ 12 }</m>, the <term>perfect forth</term>,
-which thus gets assigned the frequency <m>\frac 4 3</m> (because <m>\frac 3 2 \cdot \frac 4 3 =
-2</m>). From here we now move <em>down</em> a fifth to <m>5 - 7 = 10 \in \ZZ_{ 12 }</m>, the
-<term>minor seventh</term>, whose frequency needs to moved up an octave: <m>\frac 4 3 \cdot \frac 2 3
-\cdot 2 = \frac{ 16 }{ 9 }</m>. The next fifth down reaches <m>10 - 7 = 3 \in \ZZ_{ 12 }</m>, the
-<term>minor third</term>, with frequency <m>\frac{ 16 }{ 9 } \cdot \frac 2 3 = \frac{ 32 }{ 27 }</m>.
-One more step yield <m>3 - 7 = 8 \in \ZZ_{ 12 }</m>, the <term>minor sixth</term>, with frequency
-<m>\frac{ 32 }{ 27 } \cdot \frac 2 3 \cdot 2 = \frac{ 128 }{ 81 }</m>. Finally, <m>8 - 7 = 1  \in
-\ZZ_{ 12 }</m> gives the <term>semitone</term> with frequency <m>\frac{ 128 }{ 81 } \cdot \frac 2 3 =
-\frac{ 256 }{ 243 }</m>. 
-The resulting scale is summarized in .
+      As another example, arguing a bit more within <m>\ZZ_{ 12 }</m>, we can wee that <m>5</m> and
+<m>7</m> are additive inverses; musically this means, e.g., that moving down a forth is in the same
+pitch class as moving up a fifth; indeed the two resulting notes are an octave apart.
     </p>
   </subsection>
 
