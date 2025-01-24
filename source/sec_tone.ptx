@@ -117,7 +117,7 @@ musical terms.
       <tabular>
         <row>
           <cell halign="right">0</cell>
-          <cell halign="left">unison</cell>
+          <cell halign="left">(perfect) unison</cell>
         </row>
         <row>
           <cell halign="right">1</cell>
@@ -174,7 +174,7 @@ musical terms.
       We can now see the aforementioned multiplicative behavior of frequencies mirrored in the
 additive structure of the integers or, if we only care about pitch classes, that of <m>\ZZ_{ 12
 }</m>. For example, a fifth plus a forth yields an octave (since <m>7 + 5 = 12</m>), and so the
-respective frequency ratios (<m>\frac 3 2</m> and <m>\frac 4 3</m>) should multiply to <m>2</m>.
+respective frequency ratios (<m>\frac 3 2</m> and <m>\frac 4 3</m>) multiply to <m>2</m>.
     </p>
     <p>
       As another example, arguing a bit more within <m>\ZZ_{ 12 }</m>, we can wee that <m>5</m> and
