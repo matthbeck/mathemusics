@@ -1,5 +1,6 @@
 <acknowledgement>
   <p>
     We thank the PreTeXt support group, in particular David Austin and David Farmer, for sharing their wisdom.
+    Musical scores were created with the <url href="https://www.frescobaldi.org/" visual="Frescobaldi"/> <url href="http://lilypond.org/" visual="LilyPond"/> sheet music text editor.
   </p>
 </acknowledgement>
