@@ -91,18 +91,6 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
   </subsection>
   <subsection>
     <title>Just scales</title>
-    <sage>
-      <input>
-                A = matrix(4,5, srange(20))
-                A.rref()
-      </input>
-      <output>
-                [ 1  0 -1 -2 -3]
-                [ 0  1  2  3  4]
-                [ 0  0  0  0  0]
-                [ 0  0  0  0  0]
-      </output>
-    </sage>
   <p>
     A key feature of an interval is the frequency ratio between the two notes.
     Vastly simplified
