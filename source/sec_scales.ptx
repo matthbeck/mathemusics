@@ -99,7 +99,19 @@ by moving up by six fifths. However, going down would assign the frequency <m>\f
   </subsection>
   <subsection>
     <title>Just scales</title>
-  <p>
+    <p>
+      It is not hard to notice that the frequency ratios in <xref
+ref="tab_pythagoraenscale">Table</xref> contain only powers of 2 and 3; this is by the very
+construction of the Pythagorean scale, which in turn necessitates that the numbers appearing in the
+frequency ratios become large rather quickly.
+      Our next scale construction avoids this, essentially by also allowing a 5 in the prime
+factorizations of the frequency values. This feature of building up frequency ratios using the primes
+2, 3, and 5 yields the most restrictive definition of a <term>just scale</term>; a more loose
+definition of this term applies to any scale whose frequency ratios feature small numerators and
+denominators.
+    </p>
+    <p>
+
     A key feature of an interval is the frequency ratio between the two notes.
     Vastly simplified
     (and one has to be careful, for various reasons),
