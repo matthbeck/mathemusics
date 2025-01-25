@@ -230,8 +230,8 @@ factorization tells us that this cannot happen, though it's close:
       Thus our starting point of building scales from fifths features two conflicting philosophies:
 acoustics (more precisely, the harmonic spectrum) tells us that the natural frequency ratio of the
 fifth is <m>\frac 3 2</m>, and mathematics (more precisely, prime factorization) tells us that we
-will never reach an octave with this frequency ratio. So something has to give, and there is an
-interesting bouquet of <em>somethings</em>, each yielding a different scale.
+will never reach an octave using this frequency ratio. So something has to give, and as it turns out,
+there is a whole bouquet of <em>somethings</em>, each yielding a different scale.
     </p>
   </subsection>
 </section>
