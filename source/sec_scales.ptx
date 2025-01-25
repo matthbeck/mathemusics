@@ -81,7 +81,8 @@ The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xre
     </tabular>
   </table>
     <p>
-      At this point, we can see the number theory problem of the circle of fifths in action: the next
+      At this point, we can see the number theory problem of the circle of fifths from <xref
+ref="subsec_numbtheoryproblem">Section</xref> in action: the next
 step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
 by moving up by six fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
 \cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> ever so slightly: 
