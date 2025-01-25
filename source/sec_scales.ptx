@@ -81,17 +81,17 @@ The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xre
     </tabular>
   </table>
     <p>
-      At this point, we can see the frequency problem of the circle of fifths in action: the next
+      At this point, we can see the number theory problem of the circle of fifths in action: the next
 step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
 by moving up by five fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
 \cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> ever so slightly: 
     </p>
     <sage>
       <input>
-        numerical_approx(1024/729 - 729/512)
+        numerical_approx(729/512 - 1024/729)
       </input>
       <output>
-        129.746337890625
+        0.0191642018175583
       </output>
     </sage>
 
@@ -338,16 +338,28 @@ Let's say we want to come up with a scale with <m>n</m> tones per octave, and we
 good approximation of the frequency ratio <m>\frac 3 2</m> for the perfect fifth. If you think about
 the construction above, this translates to finding a "good" fraction <m>\frac a b</m> in the sense
 that <m>2^{ \frac a b }</m> is reasonably close to <m>\frac 3 2</m><mdash/>in other words, we want to have a good rational approximation of <m>\log_2(\frac 3 2)</m>. The continued fraction of this number
-equals <m>[0; 1, 1, 2, 2, 3, 1, 5, 2, 23, 2, 2, 1, \dots]</m>, which gives as first approximations
+is as follows:
+    </p>
+    <sage>
+      <input>
+        continued_fraction(log(3/2)/log(2))
+      </input>
+      <output>
+        [0; 1, 1, 2, 2, 3, 1, 5, 2, 23, 2, 2, 1, 1, 55, 1, 4, 3, 1, 1, ...]
+      </output>
+    </sage>
+    <p>
+      This yields as first approximations
       <men xml:id="firstapprox">
         \frac 1 2, \ \frac 2 3, \ \frac 3 5, \ \frac 4 7, \ \frac 7 {12}, \ \frac{ 24 }{ 41 }, \ \frac{ 31 }{ 53 }, \ \dots 
       </men>
-      This suggests that there are scales with 2, 3 , 5, 7, 12, 41, 53, etc. tones in an octave that
+      suggesting that there are scales with 2, 3 , 5, 7, 12, 41, 53, etc. tones in an octave that
 contain a reasonably good perfect fifth. 
     </p>
 
     <p>
-      Scales with 2 or 3 tones are not that exciting, but any musician will know a pentatonic and a heptatonic scale: you can hear examples by playing only the black, resp. white,` keys on a piano. These scales are not anywhere close to equally tuned, but those exist also: there is an ancient 5-tone scale tuning system called <em>slendro</em> used in gamelan instruments and a 7-tone scale tuning used in traditional Siamese music <xref ref="helmholtz"/>. The next numerator in <xref ref="firstapprox"/> is 12, and it is one indication why the 12-tone scale that is prevalent today is mathematically natural.
+      Scales with 2 or 3 tones are not that exciting, but any musician will know a pentatonic and a
+heptatonic scale: as we said earlier, you can hear examples by playing only the black, resp. white,` keys on a piano. These scales are not anywhere close to equally tuned, but those exist also: there is an ancient 5-tone scale tuning system called <em>slendro</em> used in gamelan instruments and a 7-tone scale tuning used in traditional Siamese music <xref ref="helmholtz"/>. The next numerator in <xref ref="firstapprox"/> is 12, and it is one indication why the 12-tone scale that is prevalent today is mathematically natural.
     </p>
 
     <p>
