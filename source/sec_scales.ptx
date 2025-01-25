@@ -12,22 +12,22 @@ frequency ratio <m>\frac 2 1</m>) and the existence of a (perfect) fifth with fr
     <title>The Pythagorean scale</title>
     <p>
       Our first construction takes the fact that <m>7</m>, corresponding to the fifth, generates <m>\ZZ_{ 12 }</m> quite literally. Again, we assign <m>7</m> the frequency <m>\frac 3 2</m>. Since <m>7 + 7 = 2 \in \ZZ_{ 12 }</m>, the frequency assigned to <m>2</m> (the whole tone) needs to be <m>(\frac 3 2)^2</m> scaled down by an octave, that is, <m>\frac 9 8</m>.
-Moving up by another perfect fifth, we reach <m>2 + 7 = 9 \in \ZZ_{ 12 }</m>, the major sixth, with frequency <m>\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }</m>.
+Moving up by another perfect fifth, we reach <m>2 + 7 = 9 \in \ZZ_{ 12 }</m> (the major sixth), with frequency <m>\frac 9 8 \cdot \frac 3 2 = \frac{ 27 }{ 16 }</m>.
 The next step <m>9 + 7 = 4 \in \ZZ_{ 12 }</m> again needs its frequency scaled down by an octave,
 i.e., <m>\frac{ 27 }{ 16 } \cdot \frac 3 2 \cdot \frac 1 2 = \frac{ 81 }{ 64 }</m>, the frequency for the major third.
-Stepping up one more fifth reaches <m>4 + 7 = 11 \in \ZZ_{ 12 }</m>, the major seventh,
+Stepping up one more fifth reaches <m>4 + 7 = 11 \in \ZZ_{ 12 }</m> (the major seventh),
 with frequency <m>\frac{ 81 }{ 64 } \cdot \frac 3 2 = \frac{ 243 }{ 128 }</m>. One more step yields
-<m>11 + 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, with frequency <m>\frac{ 243 }{ 128 } \cdot
+<m>11 + 7 = 6 \in \ZZ_{ 12 }</m> (the tritone), with frequency <m>\frac{ 243 }{ 128 } \cdot
 \frac 3 2 \cdot \frac 1 2 = \frac{ 729 }{ 512 }</m>.
     </p>
     <p>
-      Next we make use of the fact that <m>5 = -7 \in \ZZ_{ 12 }</m>, the perfect forth,
+      Next we make use of the fact that <m>5 = -7 \in \ZZ_{ 12 }</m> (the forth),
 which thus gets assigned the frequency <m>\frac 4 3</m> (because <m>\frac 3 2 \cdot \frac 4 3 =
-2</m>). From here we now move <em>down</em> a fifth to <m>5 - 7 = 10 \in \ZZ_{ 12 }</m>, the
-minor seventh, whose frequency needs to moved up an octave: <m>\frac 4 3 \cdot \frac 2 3
-\cdot 2 = \frac{ 16 }{ 9 }</m>. The next fifth down reaches <m>10 - 7 = 3 \in \ZZ_{ 12 }</m>, the
-minor third, with frequency <m>\frac{ 16 }{ 9 } \cdot \frac 2 3 = \frac{ 32 }{ 27 }</m>.
-One more step yield <m>3 - 7 = 8 \in \ZZ_{ 12 }</m>, the minor sixth, with frequency
+2</m>). From here we now move <em>down</em> a fifth to <m>5 - 7 = 10 \in \ZZ_{ 12 }</m> (the
+minor seventh), whose frequency needs to be moved up an octave: <m>\frac 4 3 \cdot \frac 2 3
+\cdot 2 = \frac{ 16 }{ 9 }</m>. The next fifth down reaches <m>10 - 7 = 3 \in \ZZ_{ 12 }</m> (the
+minor third), with frequency <m>\frac{ 16 }{ 9 } \cdot \frac 2 3 = \frac{ 32 }{ 27 }</m>.
+One more step yields <m>3 - 7 = 8 \in \ZZ_{ 12 }</m> (the minor sixth), with frequency
 <m>\frac{ 32 }{ 27 } \cdot \frac 2 3 \cdot 2 = \frac{ 128 }{ 81 }</m>. Finally, <m>8 - 7 = 1  \in
 \ZZ_{ 12 }</m> gives the semitone with frequency <m>\frac{ 128 }{ 81 } \cdot \frac 2 3 =
 \frac{ 256 }{ 243 }</m>. 
@@ -83,7 +83,7 @@ The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xre
     <p>
       At this point, we can see the number theory problem of the circle of fifths in action: the next
 step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
-by moving up by five fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
+by moving up by six fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
 \cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> ever so slightly: 
     </p>
     <sage>
@@ -94,7 +94,6 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
         0.0191642018175583
       </output>
     </sage>
-
 
   </subsection>
   <subsection>
@@ -333,7 +332,7 @@ by moving up by five fifths. However, going down would assign the frequency <m>\
   <subsection>
     <title>Why 12?</title>
     <p>
-      Partial fractions turn out to be useful also when constructing a scale from first principles.
+      Continued fractions turn out to be useful also when constructing a scale from first principles.
 Let's say we want to come up with a scale with <m>n</m> tones per octave, and we'd like to have a
 good approximation of the frequency ratio <m>\frac 3 2</m> for the perfect fifth. If you think about
 the construction above, this translates to finding a "good" fraction <m>\frac a b</m> in the sense
