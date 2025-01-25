@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Acknowledgements",
   "number": "",
   "title": "Acknowledgements",
-  "body": " We thank the PreTeXt support group, in particular David Austin and David Farmer, for sharing their wisdom.  "
+  "body": " We thank the PreTeXt support group, in particular David Austin and David Farmer, for sharing their wisdom. Musical scores were created with the  sheet music text editor.  "
 },
 {
   "id": "root-1-2-7-2",
