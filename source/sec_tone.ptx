@@ -2,7 +2,9 @@
   <title>Tones, frequencies, and <m>\ZZ_{ 12 }</m> </title>
   <p>
     We need a bit of musical language to get started.
-    (A useful index of sorts on all kinds of musical and acoustic terms is <url href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/>; it is based on <xref ref="truax"/>.)
+    (A useful index of sorts on all kinds of musical and acoustic terms is <url
+href="https://www.sfu.ca/sonic-studio-webdav/handbook/index.html" visual="here"/>; it is based on
+<xref ref="truax"/>. For general music theory, see, e.g., <url href="http://musictheory.pugetsound.edu/" visual="Hutchinson's book"/>.)
   </p>
   <subsection>
     <title>A few musical concepts</title>
@@ -45,7 +47,9 @@ frequencies of these <m>n</m> tones.
     As an example, the black keys on a piano (see <xref ref="fig_pianokeys">Figure</xref>)
 form an instance of what's known as a <em>pentatonic scale</em>. Start at your favorite
 F<m>\sharp</m>, and five black keys later you will end up at another F<m>\sharp</m>, one octave
-higher. So here <m>n = 5</m> and the frequencies of any consecutive
+higher. (If you'd like to try a simple online version of a piano, <url
+href="https://www.musictheory.net/piano" visual="go to this website"/>.
+So here <m>n = 5</m> and the frequencies of any consecutive
 F<m>\sharp</m>, G<m>\sharp</m>, A<m>\sharp</m>, C<m>\sharp</m>, and D<m>\sharp</m> determine the
 frequency of the whole scale.
 Similarly, the white keys form an example of a <em>heptatonic scale</em>, with <m>n = 7</m>.
