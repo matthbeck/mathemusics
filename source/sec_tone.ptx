@@ -215,20 +215,23 @@ in fifth will cycle through each pitch class (this is known as the <term>circle 
     </figure>
     <p>
     Mathematically, this should translate in <m>(\frac 3 2)^{ 12 }</m> being a power of <m>2</m>
-(corresponding to a few octaves), more precisely, 
+(corresponding to a few octaves), more precisely, <m>2^7 = 128</m>. The uniqueness of prime
+factorization tells us that this cannot happen, though it's close:
     </p>
     <sage>
       <input>
-                A = matrix(4,5, srange(20))
-                A.rref()
+        numerical_approx((3/2)^12)
       </input>
       <output>
-                [ 1  0 -1 -2 -3]
-                [ 0  1  2  3  4]
-                [ 0  0  0  0  0]
-                [ 0  0  0  0  0]
+        129.746337890625
       </output>
     </sage>
+    <p>
+      Thus our starting point of building scales from fifths features two conflicting philosophies:
+acoustics (more precisely, the harmonic spectrum) tells us that the natural frequency ratio of the
+fifth is <m>\frac 3 2</m>, and mathematics (more precisely, prime factorization) tells us that we
+will never reach an octave with this frequency ratio. So something has to give, and there is an
+interesting bouquet of <em>somethings</em>, each yielding a different scale.
+    </p>
   </subsection>
-
 </section>
