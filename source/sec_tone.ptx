@@ -14,7 +14,7 @@
   </p>
   <p>
     An <term>interval</term> consists of two tones/pitches. If the frequencies of the two tones have the
-ratio 2:1, we call the interval an <term>octave</term>. International pitch notation uses the same letter
+ratio <m>\frac 2 1</m>, we call the interval an <term>octave</term>. International pitch notation uses the same letter
 for two pitches that are an octave apart; e.g., A3 (at 220 Hz) is an octave below A4, whereas A5 (at
 880 Hz) is an octave above A4. The set of all pitches that differ by octaves is called a <term>pitch
 class</term><fn>
@@ -195,8 +195,8 @@ for the tone quality/timbre; i.e., different instruments will feature different 
   <p>
     The third and second harmonics have thus a frequency ratio of <m>\frac 3 2</m>, the forth and
 third harmonics one of <m>\frac 4 3 </m>, and so on.
-    Musically, the interval between the third and second harmonics for a fifth, and we will use its
-frequency ratio of <m>\frac 3 2</m> to start building musical scales.
+    Musically, the interval between the third and second harmonics is a fifth, and we will use its
+frequency ratio of <m>\frac 3 2</m> as a starting point for building musical scales.
   </p>
   </subsection>
 </section>
