@@ -111,38 +111,28 @@ denominators.
     </p>
     <p>
       In <xref ref="subsec_harmonicspectrum">Section</xref>, we motivated the frequency ratio
-<m>\frac 3 2</m> of the fifth, stemming from the 2nd and 3rd harmonics, as a starting point for
+<m>\frac 3 2</m> of the fifth (corresponding to the number <m>7</m> in <m>\ZZ_{ 12 }</m>), stemming from the 2nd and 3rd harmonics, as a starting point for
 building musical scales. The pair of 3rd and 4th harmonics gives the frequency ratio <m> \frac 4
-3 </m> of a forth, which complements the fifth to an octave and thus gives no new constraints.
+3 </m> of a forth (corresponding to <m>5</m> in <m>\ZZ_{ 12 }</m>), which complements the fifth to an octave and thus gives no new constraints.
 However, the next pair of harmonics, yielding the "natural" frequency ratio <m> \frac 5 4 </m> of a
-major third (corresponding to the number <m>4</m> in <m>\ZZ_{ 12 }</m>), gives rise to a second
-starting point of constructing a scale.
+major third (corresponding to <m>4</m> in <m>\ZZ_{ 12 }</m>), gives rise to a second starting point of constructing a scale.
+    </p>
+    <p>
+      At this point in our construction, the frequency ratios for <m> 0 </m>, <m> 4 </m>, <m> 5 </m>,
+and <m> 7 </m> are fixed. The next natural steps are to set the frequency ratio of <m> 9 = 5+4 \in
+\ZZ_{ 12 }</m> to <m> \frac 4 3 \cdot \frac 5 4 = \frac 5 3 </m> and that of <m> 11 = 7 + 4 \in
+\ZZ_{ 12 }</m> to <m> \frac 3 2 \cdot \frac 5 4 = \frac{ 15 }{ 8 }</m>.
 
-    A key feature of an interval is the frequency ratio between the two notes.
-    Vastly simplified
-    (and one has to be careful, for various reasons),
-    our ears seem to prefer simple ratios,
-    such as <m>2 \rat 1</m> (octave), <m>3 \rat 2</m>
-    (perfect fifth),
-    <m>4 \rat 3</m>
-    (perfect forth),
-    etc.
-    Next we address the (decision) problem of assigning interval fractions.
-    To illustrate the subtleties involved,
-    it is helpful to have a sample scale to follow along with;
-    we use one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>,
+
+     one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>,
     due to Johannes Kepler and known as
     <em>Kepler's Monochord No.<nbsp/>2</em>,
-    transposed down a fifth <xref ref="barbour"/>;<fn>
-    In its most restrictive definition,
-    a \Def{just scale} is one with frequency ratios only involving the primes 2, 3, and 5.
+    transposed down a fifth <xref ref="barbour"/>;
     Kepler's just scale is based on a ratio
     <m>4 \rat 5 \rat 6</m> for each major chord (C-E-G, F-A-C, and G-B-D);
     this is precisely the ratio in which the major chord appears within the harmonic spectrum of a tone.
     Minor third and minor seventh follow then by symmetry,
     and the ratio for F\sh is the product of the ratios for a major third and a whole tone.
-    </fn> the following section will discuss analogous results for various other scales
-    (see also \url{https://brefeld.hier-im-netz.de/konsonanz.html}).
   </p>
   <table xml:id="tab_classicjustscale">
     <title>The frequency ratios of Kepler's just scale</title>
@@ -192,158 +182,6 @@ starting point of constructing a scale.
     </tabular>
   </table>
   <p>
-    The inversion equivalence (b) dictates that the interval fraction of a given interval in a chord and that of its complementary interval are equal.
-    For example,
-    the first F-major chord in <xref ref="fig_inversions">Figure</xref>
-    features a perfect forth between C and F, where the next inversion gives a perfect fifth between these two notes
-    (once more, because we do not distinguish between octaves).
-    Thus the respective interval fractions,
-    i.e., <m>h_5</m> and <m>h_7</m>, must be equal.
-    Based on <xref ref="tab_classicjustscale">Table</xref>,
-    the two possible choices for <m>h_5 = h_7</m> are
-    <m>\frac 4 3</m> and <m>\frac 3 2</m>;
-    we give preference to the frequency ratio whose sum of numerator and denominator is smaller.
-    Thus in this case, <m>h_5 = h_7 = \frac 3 2</m>.
-    More generally, we must have <m>h_j = h_{ 12-j }</m>.
-    (This mirrors the fact that in
-    <m>\ZZ_{ 12 }</m> there are only six meaningful nonzero distances.)
-    Our choice of preference results in the interval fractions in <xref ref="tab_classicjustscaleintfractions">Table</xref>.
-  </p>
-  <table xml:id="tab_classicjustscaleintfractions">
-    <title>The interval fractions stemming from Kepler's just scale</title>
-    <tabular>
-      <row>
-        <cell><m>h_1</m></cell>
-        <cell><m>h_2</m></cell>
-        <cell><m>h_3</m></cell>
-        <cell><m>h_4</m></cell>
-        <cell><m>h_5</m></cell>
-        <cell><m>h_6</m></cell>
-        <cell><m>h_7</m></cell>
-        <cell><m>h_8</m></cell>
-        <cell><m>h_9</m></cell>
-        <cell><m>h_{10}</m></cell>
-        <cell><m>h_{11}</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell><m>\frac{ 15 }{ 8 }</m></cell>
-        <cell><m>\frac{ 9 }{ 8 }</m></cell>
-        <cell><m>\frac{ 5 }{ 3 }</m></cell>
-        <cell><m>\frac{ 5 }{ 4 }</m></cell>
-        <cell><m>\frac{ 3 }{ 2 }</m></cell>
-        <cell><m>\frac{ 45 }{ 32 }</m></cell>
-        <cell><m>\frac{ 3 }{ 2 }</m></cell>
-        <cell><m>\frac{ 5 }{ 4 }</m></cell>
-        <cell><m>\frac{ 5 }{ 3 }</m></cell>
-        <cell><m>\frac{ 9 }{ 8 }</m></cell>
-        <cell><m>\frac{ 15 }{ 8 }</m></cell>
-      </row>
-    </tabular>
-    \vspace{10pt}
-  </table>
-  <p>
-    We are now all set to compute the weight of a given triad;
-    again, it equals the sum of all numerators and denominators appearing in each interval fraction that we can detect in the triad.<fn>
-    Birkhoff<nbsp/><xref ref="birkhoffaestheticmeasure"/> conceptualized a notion of
-    <em>aesthetic measure</em> of a chord,
-    though it is arguable much less refined.
-    </fn> For example,
-    the major triad C-E-G features a perfect fifth,
-    a major third, and a minor third;
-    thus its weight equals <m>5 + 3 + 5 + 4 + 3 + 2 = 22</m>,
-    summing the numerators and denominators appearing in <m>h_3</m>,
-    <m>h_4</m>, and <m>h_7</m>.
-    Naturally, this number depends only on the distances between the base note and the other two notes,
-    in this case 4 and 7;
-    we will record this triad as the pair <m>(4,7)</m>.
-    <xref ref="table_classicjustscaleprimecomplexity">Table</xref>
-    shows the weights for all twelve equivalence classes:
-    the first row gives the differences <m>(a,b)</m> to the base note for one representative of the equivalence class,
-    the second row sums the numerators and denominators appearing in <m>h_a</m>,
-    <m>h_b</m>, and <m>h_{ b-a }</m>.
-  </p>
-  <table xml:id="table_classicjustscaleprimecomplexity">
-    <title>The chord weights stemming from Kepler's just scale</title>
-    <tabular>
-      <row>
-        <cell><m>(1,2)</m></cell>
-        <cell><m>(1,3)</m></cell>
-        <cell><m>(1,4)</m></cell>
-        <cell><m>(1,5)</m></cell>
-        <cell><m>(1,6)</m></cell>
-        <cell><m>(2,4)</m></cell>
-        <cell><m>(2,5)</m></cell>
-        <cell><m>(2,6)</m></cell>
-        <cell><m>(2,7)</m></cell>
-        <cell><m>(3,6)</m></cell>
-        <cell><m>(3,7)</m></cell>
-        <cell><m>(4,8)</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>63</cell>
-        <cell>48</cell>
-        <cell>40</cell>
-        <cell>37</cell>
-        <cell>105</cell>
-        <cell>43</cell>
-        <cell>30</cell>
-        <cell>103</cell>
-        <cell>27</cell>
-        <cell>93</cell>
-        <cell>22</cell>
-        <cell>27</cell>
-      </row>
-    </tabular>
-    \vspace{10pt}
-  </table>
-  <p>
-    The weight gives a
-    (very rough)
-    measure of a chord.
-    Indeed, the
-    <q>lightest</q>
-    chord family <m>(3,7)</m> contains major and minor triads.
-    The next three chord families,
-    with weights 27 and 30, are <m>(2,7)</m>
-    (corresponding to a set of lovely chords),
-    <m>(4,8)</m>
-    (corresponding to the tritone),
-    and <m>(2,5)</m>
-    (another lovely chord family).
-    The respective chords are illustrated in <xref ref="fig_classicwinners">Figure</xref>.
-  </p>
-  <figure xml:id="fig_classicwinners">
-    <caption>The chords in the equivalence classes <m>(3,7)</m>, <m>(2,7)</m>, <m>(4,8)</m>, and <m>(2,5)</m>.</caption>
-    <image width="93%" source="images/classicwinners.png"/>
-  </figure>
-
   </subsection>
   <subsection>
     <title>Equal-tempered scales and continued fractions</title>
