@@ -70,7 +70,7 @@ example), the assigned frequencies of which will determine those of the entire s
     <title>Interval arithmetic</title>
   <figure xml:id="fig_twelvescale">
     <caption>A 12-tone scale.</caption>
-    <image width="83%" source="images/twelvescale.png"/>
+    <image width="73%" source="images/twelvescale.png"/>
   </figure>
     <p>
       From now on, we will work with a chromatic scale, with 12 tones in an octave. We model it as
