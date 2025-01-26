@@ -81,8 +81,7 @@ The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xre
     </tabular>
   </table>
     <p>
-      At this point, we can see the number theory problem of the circle of fifths from <xref
-ref="subsec_numbtheoryproblem">Section</xref> in action: the next
+      At this point, we can see the number theory problem of the circle of fifths from <xref ref="subsec_numbtheoryproblem">Section</xref> in action: the next
 step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
 by moving up by six fifths. However, going down would assign the frequency <m>\frac{ 256 }{ 243 }
 \cdot \frac 2 3 \cdot 2 = \frac{ 1024 }{ 729 }</m>, which differs from <m>\frac{ 729 }{ 512 }</m> ever so slightly: 
@@ -106,11 +105,18 @@ construction of the Pythagorean scale, which in turn necessitates that the numer
 denominators appearing in the frequency ratios become large rather quickly.
       Our next scale construction avoids this, essentially by also allowing a <m> 5 </m> in the prime
 factorizations of the frequency values. This feature of building up frequency ratios using the primes
-<m> 2 </m>2, <m> 3 </m>, and <m> 5 </m> yields the most restrictive definition of a <term>just scale</term>; a more loose
+<m> 2 </m>, <m> 3 </m>, and <m> 5 </m> yields the most restrictive definition of a <term>just scale</term>; a more loose
 definition of this term applies to any scale whose frequency ratios feature small numerators and
 denominators.
     </p>
     <p>
+      In <xref ref="subsec_harmonicspectrum">Section</xref>, we motivated the frequency ratio
+<m>\frac 3 2</m> of the fifth, stemming from the 2nd and 3rd harmonics, as a starting point for
+building musical scales. The pair of 3rd and 4th harmonics gives the frequency ratio <m> \frac 4
+3 </m> of a forth, which complements the fifth to an octave and thus gives no new constraints.
+However, the next pair of harmonics, yielding the "natural" frequency ratio <m> \frac 5 4 </m> of a
+major third (corresponding to the number <m>4</m> in <m>\ZZ_{ 12 }</m>), gives rise to a second
+starting point of constructing a scale.
 
     A key feature of an interval is the frequency ratio between the two notes.
     Vastly simplified
@@ -171,7 +177,7 @@ denominators.
       </row>
       <row>
         <cell><m>\frac 1  1</m></cell>
-        <cell><m>\frac 16  15</m></cell>
+        <cell><m>\frac{16}{15}</m></cell>
         <cell><m>\frac 9  8</m></cell>
         <cell><m>\frac 6  5</m></cell>
         <cell><m>\frac 5  4</m></cell>

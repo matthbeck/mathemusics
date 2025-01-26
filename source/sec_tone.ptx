@@ -187,7 +187,7 @@ pitch class as moving up a fifth; indeed the two resulting notes are an octave a
     </p>
   </subsection>
 
-  <subsection>
+  <subsection xml:id="subsec_harmonicspectrum">
     <title>The harmonic spectrum</title>
   <p>
     A tone actually comes with many frequencies: its fundamental frequency (which determines the
