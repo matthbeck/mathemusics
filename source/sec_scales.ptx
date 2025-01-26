@@ -101,9 +101,9 @@ by moving up by six fifths. However, going down would assign the frequency <m>\f
     <title>Just scales</title>
     <p>
       It is not hard to notice that the frequency ratios in <xref
-ref="tab_pythagoraenscale">Table</xref> contain only powers of 2 and 3; this is by the very
-construction of the Pythagorean scale, which in turn necessitates that the numbers appearing in the
-frequency ratios become large rather quickly.
+ref="tab_pythagoraenscale">Table</xref> contain only powers of 2 and 3; this stems from the very
+construction of the Pythagorean scale, which in turn necessitates that the numerators and
+denominators appearing in the frequency ratios become large rather quickly.
       Our next scale construction avoids this, essentially by also allowing a 5 in the prime
 factorizations of the frequency values. This feature of building up frequency ratios using the primes
 2, 3, and 5 yields the most restrictive definition of a <term>just scale</term>; a more loose
