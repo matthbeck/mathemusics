@@ -118,21 +118,24 @@ However, the next pair of harmonics, yielding the "natural" frequency ratio <m> 
 major third (corresponding to <m>4</m> in <m>\ZZ_{ 12 }</m>), gives rise to a second starting point of constructing a scale.
     </p>
     <p>
-      At this point in our construction, the frequency ratios for <m> 0 </m>, <m> 4 </m>, <m> 5 </m>,
+      At this moment in our construction, the frequency ratios for <m> 0 </m>, <m> 4 </m>, <m> 5 </m>,
 and <m> 7 </m> are fixed. The next natural steps are to set the frequency ratio of <m> 9 = 5+4 \in
 \ZZ_{ 12 }</m> to <m> \frac 4 3 \cdot \frac 5 4 = \frac 5 3 </m> and that of <m> 11 = 7 + 4 \in
 \ZZ_{ 12 }</m> to <m> \frac 3 2 \cdot \frac 5 4 = \frac{ 15 }{ 8 }</m>.
-
-
-     one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>,
-    due to Johannes Kepler and known as
-    <em>Kepler's Monochord No.<nbsp/>2</em>,
-    transposed down a fifth <xref ref="barbour"/>;
-    Kepler's just scale is based on a ratio
-    <m>4 \rat 5 \rat 6</m> for each major chord (C-E-G, F-A-C, and G-B-D);
-    this is precisely the ratio in which the major chord appears within the harmonic spectrum of a tone.
-    Minor third and minor seventh follow then by symmetry,
-    and the ratio for F\sh is the product of the ratios for a major third and a whole tone.
+      With the same reasoning as for the Pythagorean scale, we assign <m> 2 = 7 + 7 \in \ZZ_{ 12
+}</m> the frequency ratio <m> (\frac 3 2)^2 \cdot \frac 1 2 = \frac 9 8 </m>. A musician will now
+notice that we have constructed frequencies that the three major chords (C-E-G, F-A-C, and G-B-D when
+we start our scale at C) each have frequency ratios <m> 4:5:6 </m>, which is precisely the ratio in which the major chord appears within the harmonic spectrum.
+    </p>
+    <p>
+      The frequency ratio <m> \frac{ 16 }{ 15 }</m> of <m> 1 </m> follows by symmetry if we want its
+product with <m> \frac{ 15 }{ 8 }</m> (the frequency ratio of <m> 11 </m>) to be <m> 2 </m>. By the
+same reasoning we assign <m> 3 </m> the frequency ratio <m> \frac 65 </m>, <m> 8 </m> the
+frequency ration <m> \frac 8 5 </m>, and <m> 10 </m> the frequency ratio <m> \frac{ 16 }{ 9 }</m>.
+      The remaining frequency ration needs to be assigned to <m> 6 </m>, which has several ways to be
+broken down in <m> \ZZ_{ 12 } </m>. Writing <m> 6 = 4+2 </m>, we choose the frequency ratio <m> \frac
+5 4 \cdot 9 8 = \frac{ 45 }{ 32 }</m>.
+      This yields one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>, due to Johannes Kepler and known as <em>Kepler's Monochord No.<nbsp/>2</em>, transposed down a fifth <xref ref="barbour"/>.
   </p>
   <table xml:id="tab_classicjustscale">
     <title>The frequency ratios of Kepler's just scale</title>
