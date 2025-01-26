@@ -124,17 +124,18 @@ and <m> 7 </m> are fixed. The next natural steps are to set the frequency ratio 
 \ZZ_{ 12 }</m> to <m> \frac 3 2 \cdot \frac 5 4 = \frac{ 15 }{ 8 }</m>.
       With the same reasoning as for the Pythagorean scale, we assign <m> 2 = 7 + 7 \in \ZZ_{ 12
 }</m> the frequency ratio <m> (\frac 3 2)^2 \cdot \frac 1 2 = \frac 9 8 </m>. A musician will now
-notice that we have constructed frequencies that the three major chords (C-E-G, F-A-C, and G-B-D when
-we start our scale at C) each have frequency ratios <m> 4:5:6 </m>, which is precisely the ratio in which the major chord appears within the harmonic spectrum.
+notice that we have constructed frequencies, such that the three major chords (C-E-G, F-A-C, and
+G-B-D when we start our scale at C) each have frequency ratios <m> 4:5:6 </m>, which is precisely the
+ratio in which the major chord appears within a harmonic spectrum.
     </p>
     <p>
       The frequency ratio <m> \frac{ 16 }{ 15 }</m> of <m> 1 </m> follows by symmetry if we want its
 product with <m> \frac{ 15 }{ 8 }</m> (the frequency ratio of <m> 11 </m>) to be <m> 2 </m>. By the
-same reasoning we assign <m> 3 </m> the frequency ratio <m> \frac 65 </m>, <m> 8 </m> the
+same reasoning we assign <m> 3 </m> the frequency ratio <m> \frac 65 </m>, then <m> 8 </m> the
 frequency ration <m> \frac 8 5 </m>, and <m> 10 </m> the frequency ratio <m> \frac{ 16 }{ 9 }</m>.
-      The remaining frequency ration needs to be assigned to <m> 6 </m>, which has several ways to be
+      What remains is the frequency ratio assigned to <m> 6 </m>, which has several ways to be
 broken down in <m> \ZZ_{ 12 } </m>. Writing <m> 6 = 4+2 </m>, we choose the frequency ratio <m> \frac
-5 4 \cdot 9 8 = \frac{ 45 }{ 32 }</m>.
+5 4 \cdot \frac 9 8 = \frac{ 45 }{ 32 }</m>.
       This yields one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>, due to Johannes Kepler and known as <em>Kepler's Monochord No.<nbsp/>2</em>, transposed down a fifth <xref ref="barbour"/>.
   </p>
   <table xml:id="tab_classicjustscale">
