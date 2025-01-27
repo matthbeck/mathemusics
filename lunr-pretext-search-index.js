@@ -145,9 +145,9 @@ var ptx_lunr_docs = [
   "body": "equal tempered "
 },
 {
-  "id": "tab_classicjustscale",
+  "id": "tab_equaltempscale",
   "level": "2",
-  "url": "sec_scales.html#tab_classicjustscale",
+  "url": "sec_scales.html#tab_equaltempscale",
   "type": "Table",
   "number": "3.3",
   "title": "The frequency ratios in the equal-tempered scale",
