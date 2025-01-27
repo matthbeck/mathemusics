@@ -195,11 +195,20 @@ from <m>\frac 3 2</m>. Indeed, the ratio of these two values is the famous <em>s
 instance is the ratio of the frequencies of the Pyathagorean major third (<m>\frac{ 81 }{ 64 }</m>,
 as featured in <xref ref="tab_pythagoraenscale">Table</xref>)
 and the <q>natural</q> major third (<m> \frac 5 4 </m>) appearing in the harmonic spectrum. The difference
-of a syntonic comma is noticeable even to non-musically trained ears.
+of a syntonic comma is noticeable even to non-musically-trained ears.
     </p>
   </subsection>
   <subsection>
     <title>Equal-tempered scales and continued fractions</title>
+    <p>
+      Our next scale starts out mathematically boring: momentarily throwing out the concept of
+frequency ratios that are actually fractions, we can easily construct a 12-tone scale in which each
+semitone interval has exactly the same frequency ratio. Namely, we assign to each interval the
+appropriate power of<nbsp/><m>\sqrt[12] 2</m>. The resulting scale is called <term>equal
+tempered</term>. A neat mathematical interplay between just and equal-temperament scales is featured
+in <xref ref="bolandhughston"/>.
+    </p>
+ 
   </subsection>
   <subsection>
     <title>Why 12?</title>

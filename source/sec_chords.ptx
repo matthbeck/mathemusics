@@ -32,11 +32,8 @@
     i.e., ones with simple<fn>
     Here <em>simple</em> refers to fractions whose numerator and denominator are not too large.
     We will have more to say about this later.
-    </fn> rational frequency ratio
-    (as opposed to, e.g., the equal-tempered 12-note scale,
-    in which each interval has a frequency ratio equal to a power of<nbsp/><m>\sqrt[12] 2</m>;
-    see <xref ref="bolandhughston"/> for a mathematical interplay between just and equal-temperament scales).
-    It is this feature that will allow us to study chords from an basic mathematical perspective.
+    </fn> rational frequency ratio.
+   It is this feature that will allow us to study chords from an basic mathematical perspective.
   </p>
   <p>
     For the sake of simplicity, we discuss triads
