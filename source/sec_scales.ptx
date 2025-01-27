@@ -190,7 +190,10 @@ broken down in <m> \ZZ_{ 12 } </m>. Writing <m> 6 = 4+2 </m>, we choose the freq
 smaller than the ones in <xref ref="tab_pythagoraenscale">Table</xref>. But Kepler's just scale has a
 different set of disadvantages; possibly the most famous is the <em>wolf fifth</em> between D and A,
 with a frequency ratio of <m> \frac 5 3 \cdot \frac 8 9 = \frac{ 40 }{ 27 }</m>, which is a bit off
-from <m>\frac 3 2</m>.
+from <m>\frac 3 2</m>. Indeed, the ratio of these two values is the famous <em>syntonic comma</em>
+<m>\frac{ 81 }{ 80 }</m>. It shows up all over the place when one studies musical scales; one other
+instance is the ratio of the frequencies of the Pyathagorean major third (<m>\frac{ 81 }{ 64 }</m>)
+and the "natural" major third (<m> \frac 5 4 </m>) appearing in the harmonic spectrum.
     </p>
   </subsection>
   <subsection>
