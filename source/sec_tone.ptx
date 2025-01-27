@@ -28,7 +28,7 @@ wonderful examples of equivalence classes.
   <p>
     Frequencies behave multiplicatively; e.g., moving up an octave means doubling the frequency of
 the tone, moving down an octave means halving it. We can also move in between octaves: e.g., we can
-multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone; to reach the octave above the original tone, we can multiply the frequency again by <m>\frac 4 3</m>.
+multiply the frequency of a given tone by <m>\frac 3 2</m> to reach another tone; to reach the octave above the original tone, we can multiply the frequency again by<nbsp/><m>\frac 4 3</m>.
   </p>
   <p>
     In <xref ref="sec_scales"/>, we will discuss how one constructs actual musical scales;
@@ -182,7 +182,7 @@ musical terms.
       We can now see the aforementioned multiplicative behavior of frequencies mirrored in the
 additive structure of the integers or, if we care only about pitch classes, that of <m>\ZZ_{ 12
 }</m>. For example, a fifth plus a forth yields an octave (since <m>7 + 5 = 12</m>), and so the
-respective frequency ratios (in a natural tuning, these would be <m>\frac 3 2</m> and <m>\frac 4 3</m>) multiply to <m>2</m>.
+respective frequency ratios (in a natural tuning, these would be <m>\frac 3 2</m> and <m>\frac 4 3</m>) multiply to<nbsp/><m>2</m>.
     </p>
     <p>
       As another example, arguing a bit more within <m>\ZZ_{ 12 }</m>, we can wee that <m>5</m> and

@@ -6,7 +6,7 @@
     (see, e.g.,<nbsp/><xref ref="cladertwelvetones,schettlerxenharmonic"/> for two recent papers).
     Here we present various constructions; all are for a scale in 12 notes in an octave (with
 frequency ratio <m>\frac 2 1</m>) and the existence of a (perfect) fifth with frequency ratio
-<m>\frac 3 2</m>. In our simple mathematical model, the fifth corresponds to the number <m>7</m> in <m>\ZZ_{ 12 }</m>. 
+<m>\frac 3 2</m>. In our simple mathematical model, the fifth corresponds to the number <m>7</m> in<nbsp/><m>\ZZ_{ 12 }</m>. 
   </p>
   <subsection>
     <title>The Pythagorean scale</title>
@@ -204,11 +204,58 @@ of a syntonic comma is noticeable even to non-musically-trained ears.
       Our next scale starts out mathematically boring: momentarily throwing out the concept of
 frequency ratios that are actually fractions, we can easily construct a 12-tone scale in which each
 semitone interval has exactly the same frequency ratio. Namely, we assign to each interval the
-appropriate power of<nbsp/><m>\sqrt[12] 2</m>. The resulting scale is called <term>equal
+appropriate power of <m>\sqrt[12] 2</m>. The resulting scale is called <term>equal
 tempered</term>. A neat mathematical interplay between just and equal-temperament scales is featured
-in <xref ref="bolandhughston"/>.
+in<nbsp/><xref ref="bolandhughston"/>.
     </p>
- 
+    <table xml:id="tab_classicjustscale">
+      <title>The frequency ratios in the equal-tempered scale</title>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>10</cell>
+          <cell>11</cell>
+        </row>
+        <row bottom="minor">
+          <cell>C</cell>
+          <cell>C<m>\sharp</m></cell>
+          <cell>D</cell>
+          <cell>E<m>\flat</m></cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>F<m>\sharp</m></cell>
+          <cell>G</cell>
+          <cell>G<m>\sharp</m></cell>
+          <cell>A</cell>
+          <cell>B<m>\flat</m></cell>
+          <cell>B</cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>\sqrt[12] 2</m></cell>
+          <cell><m>\sqrt[6] 2</m></cell>
+          <cell><m>\sqrt[4] 2</m></cell>
+          <cell><m>\sqrt[3] 2</m></cell>
+          <cell><m>2^{ \frac 5 {12} } </m></cell>
+          <cell><m>\sqrt 2</m></cell>
+          <cell><m>2^{ \frac 7 {12} }</m></cell>
+          <cell><m>2^{ \frac 2 3 }</m></cell>
+          <cell><m>2^{ \frac 3 4 }</m></cell>
+          <cell><m>2^{ \frac 5 6 }</m></cell>
+          <cell><m>2^{ \frac{11}{12} }</m></cell>
+        </row>
+      </tabular>
+    </table>
+  
   </subsection>
   <subsection>
     <title>Why 12?</title>
@@ -244,7 +291,7 @@ heptatonic scale: as we said earlier, you can hear examples by playing only the 
 
     <p>
       You might ask, what about 41- or 53-tone scales? They exist: e.g., there is the xenharmonic
-<em>garibaldi</em> temperament (using 41 tones) and a <em>generalized keyboard hamonium</em> with 53 notes to an octave constructed in 1876 by Robert Boranquet <xref ref="helmholtz"/>.
+<em>garibaldi</em> temperament (using 41 tones) and a <em>generalized keyboard hamonium</em> with 53 notes to an octave constructed in 1876 by Robert Boranquet<nbsp/><xref ref="helmholtz"/>.
     </p>
   </subsection>
 
