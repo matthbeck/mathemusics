@@ -204,9 +204,7 @@ of a syntonic comma is noticeable even to non-musically-trained ears.
       Our next scale starts out mathematically boring: momentarily throwing out the concept of
 frequency ratios that are actually fractions, we can easily construct a 12-tone scale in which each
 semitone interval has exactly the same frequency ratio. Namely, we assign to each interval the
-appropriate power of <m>\sqrt[12] 2</m>. The resulting scale is called <term>equal
-tempered</term>. A neat mathematical interplay between just and equal-temperament scales is featured
-in<nbsp/><xref ref="bolandhughston"/>.
+appropriate power of <m>\sqrt[12] 2</m>. The resulting scale in <xref ref="tab_equaltempscale">Table</xref> is called <term>equal tempered</term>. (A neat mathematical interplay between just and equal-temperament scales is featured in<nbsp/><xref ref="bolandhughston"/>.)
     </p>
     <table xml:id="tab_equaltempscale">
       <title>The frequency ratios in the equal-tempered scale</title>
@@ -255,6 +253,10 @@ in<nbsp/><xref ref="bolandhughston"/>.
         </row>
       </tabular>
     </table>
+    <p>
+      An equal temperament is what a piano tuner attempts, so if you've ever wondered what <m>\sqrt
+2</m> sounds like, play a tritone...
+    </p>
   
   </subsection>
   <subsection>
