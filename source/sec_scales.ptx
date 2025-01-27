@@ -208,7 +208,7 @@ appropriate power of <m>\sqrt[12] 2</m>. The resulting scale is called <term>equ
 tempered</term>. A neat mathematical interplay between just and equal-temperament scales is featured
 in<nbsp/><xref ref="bolandhughston"/>.
     </p>
-    <table xml:id="tab_classicjustscale">
+    <table xml:id="tab_equaltempscale">
       <title>The frequency ratios in the equal-tempered scale</title>
       <tabular halign="center">
         <row bottom="minor">
@@ -245,7 +245,7 @@ in<nbsp/><xref ref="bolandhughston"/>.
           <cell><m>\sqrt[6] 2</m></cell>
           <cell><m>\sqrt[4] 2</m></cell>
           <cell><m>\sqrt[3] 2</m></cell>
-          <cell><m>2^{ \frac 5 {12} } </m></cell>
+          <cell><m>2^{ \frac 5 {12} }</m></cell>
           <cell><m>\sqrt 2</m></cell>
           <cell><m>2^{ \frac 7 {12} }</m></cell>
           <cell><m>2^{ \frac 2 3 }</m></cell>
