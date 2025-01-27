@@ -114,7 +114,7 @@ denominators.
 <m>\frac 3 2</m> of the fifth (corresponding to the number <m>7</m> in <m>\ZZ_{ 12 }</m>), stemming from the 2nd and 3rd harmonics, as a starting point for
 building musical scales. The pair of 3rd and 4th harmonics gives the frequency ratio <m> \frac 4
 3 </m> of a forth (corresponding to <m>5</m> in <m>\ZZ_{ 12 }</m>), which complements the fifth to an octave and thus gives no new constraints.
-However, the next pair of harmonics, yielding the "natural" frequency ratio <m> \frac 5 4 </m> of a
+However, the next pair of harmonics, yielding the <q>natural</q> frequency ratio <m> \frac 5 4 </m> of a
 major third (corresponding to <m>4</m> in <m>\ZZ_{ 12 }</m>), gives rise to a second starting point of constructing a scale.
     </p>
     <p>
@@ -192,8 +192,10 @@ different set of disadvantages; possibly the most famous is the <em>wolf fifth</
 with a frequency ratio of <m> \frac 5 3 \cdot \frac 8 9 = \frac{ 40 }{ 27 }</m>, which is a bit off
 from <m>\frac 3 2</m>. Indeed, the ratio of these two values is the famous <em>syntonic comma</em>
 <m>\frac{ 81 }{ 80 }</m>. It shows up all over the place when one studies musical scales; one other
-instance is the ratio of the frequencies of the Pyathagorean major third (<m>\frac{ 81 }{ 64 }</m>)
-and the "natural" major third (<m> \frac 5 4 </m>) appearing in the harmonic spectrum.
+instance is the ratio of the frequencies of the Pyathagorean major third (<m>\frac{ 81 }{ 64 }</m>,
+as featured in <xref ref="tab_pythagoraenscale">Table</xref>)
+and the <q>natural</q> major third (<m> \frac 5 4 </m>) appearing in the harmonic spectrum. The difference
+of a syntonic comma is noticeable even to non-musically trained ears.
     </p>
   </subsection>
   <subsection>
@@ -205,7 +207,7 @@ and the "natural" major third (<m> \frac 5 4 </m>) appearing in the harmonic spe
       Continued fractions turn out to be useful also when constructing a scale from first principles.
 Let's say we want to come up with a scale with <m>n</m> tones per octave, and we'd like to have a
 good approximation of the frequency ratio <m>\frac 3 2</m> for the perfect fifth. If you think about
-the construction above, this translates to finding a "good" fraction <m>\frac a b</m> in the sense
+the construction above, this translates to finding a <q>good</q> fraction <m>\frac a b</m> in the sense
 that <m>2^{ \frac a b }</m> is reasonably close to <m>\frac 3 2</m><mdash/>in other words, we want to have a good rational approximation of <m>\log_2(\frac 3 2)</m>. The continued fraction of this number
 is as follows:
     </p>
