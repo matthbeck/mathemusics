@@ -33,53 +33,53 @@ One more step yields <m>3 - 7 = 8 \in \ZZ_{ 12 }</m> (the minor sixth), with fre
 \frac{ 256 }{ 243 }</m>. 
 The resulting scale is summarized in <xref ref="tab_pythagoraenscale">Table</xref>.
     </p>
-  <table xml:id="tab_pythagoraenscale">
-    <title>The frequency ratios of the Pythagorean scale.</title>
-    <tabular halign="center">
-      <row bottom="minor">
-        <cell>0</cell>
-        <cell>1</cell>
-        <cell>2</cell>
-        <cell>3</cell>
-        <cell>4</cell>
-        <cell>5</cell>
-        <cell>6</cell>
-        <cell>7</cell>
-        <cell>8</cell>
-        <cell>9</cell>
-        <cell>10</cell>
-        <cell>11</cell>
-      </row>
-      <row bottom="minor">
-        <cell>C</cell>
-        <cell>C<m>\sharp</m></cell>
-        <cell>D</cell>
-        <cell>E<m>\flat</m></cell>
-        <cell>E</cell>
-        <cell>F</cell>
-        <cell>F<m>\sharp</m></cell>
-        <cell>G</cell>
-        <cell>G<m>\sharp</m></cell>
-        <cell>A</cell>
-        <cell>B<m>\flat</m></cell>
-        <cell>B</cell>
-      </row>
-      <row>
-        <cell><m>\frac 1 1</m></cell>
-        <cell><m>\frac{ 256 }{ 243 }</m></cell>
-        <cell><m>\frac 9 8</m></cell>
-        <cell><m>\frac{ 32 }{ 27 }</m></cell>
-        <cell><m>\frac{ 81 }{ 64 }</m></cell>
-        <cell><m>\frac 4 3</m></cell>
-        <cell><m>\frac{ 729 }{ 512 }</m></cell>
-        <cell><m>\frac 3 2</m></cell>
-        <cell><m>\frac{ 128 }{ 81 }</m></cell>
-        <cell><m>\frac{ 27 }{ 16 }</m></cell>
-        <cell><m>\frac{ 16 }{ 9 }</m></cell>
-        <cell><m>\frac{ 243 }{ 128 }</m></cell>
-      </row>
-    </tabular>
-  </table>
+    <table xml:id="tab_pythagoraenscale">
+      <title>The frequency ratios of the Pythagorean scale.</title>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>10</cell>
+          <cell>11</cell>
+        </row>
+        <row bottom="minor">
+          <cell>C</cell>
+          <cell>C<m>\sharp</m></cell>
+          <cell>D</cell>
+          <cell>E<m>\flat</m></cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>F<m>\sharp</m></cell>
+          <cell>G</cell>
+          <cell>G<m>\sharp</m></cell>
+          <cell>A</cell>
+          <cell>B<m>\flat</m></cell>
+          <cell>B</cell>
+        </row>
+        <row>
+          <cell><m>\frac 1 1</m></cell>
+          <cell><m>\frac{ 256 }{ 243 }</m></cell>
+          <cell><m>\frac 9 8</m></cell>
+          <cell><m>\frac{ 32 }{ 27 }</m></cell>
+          <cell><m>\frac{ 81 }{ 64 }</m></cell>
+          <cell><m>\frac 4 3</m></cell>
+          <cell><m>\frac{ 729 }{ 512 }</m></cell>
+          <cell><m>\frac 3 2</m></cell>
+          <cell><m>\frac{ 128 }{ 81 }</m></cell>
+          <cell><m>\frac{ 27 }{ 16 }</m></cell>
+          <cell><m>\frac{ 16 }{ 9 }</m></cell>
+          <cell><m>\frac{ 243 }{ 128 }</m></cell>
+        </row>
+      </tabular>
+    </table>
     <p>
       At this point, we can see the number theory problem of the circle of fifths from <xref ref="subsec_numbtheoryproblem">Section</xref> in action: the next
 step going down a fifth reaches <m>1 - 7 = 6 \in \ZZ_{ 12 }</m>, the tritone, which we already reached
@@ -137,54 +137,61 @@ frequency ration <m> \frac 8 5 </m>, and <m> 10 </m> the frequency ratio <m> \fr
 broken down in <m> \ZZ_{ 12 } </m>. Writing <m> 6 = 4+2 </m>, we choose the frequency ratio <m> \frac
 5 4 \cdot \frac 9 8 = \frac{ 45 }{ 32 }</m>.
       This yields one of the most common just scales given in <xref ref="tab_classicjustscale">Table</xref>, due to Johannes Kepler and known as <em>Kepler's Monochord No.<nbsp/>2</em>, transposed down a fifth <xref ref="barbour"/>.
-  </p>
-  <table xml:id="tab_classicjustscale">
-    <title>The frequency ratios of Kepler's just scale</title>
-    <tabular halign="center">
-      <row bottom="minor">
-        <cell>0</cell>
-        <cell>1</cell>
-        <cell>2</cell>
-        <cell>3</cell>
-        <cell>4</cell>
-        <cell>5</cell>
-        <cell>6</cell>
-        <cell>7</cell>
-        <cell>8</cell>
-        <cell>9</cell>
-        <cell>10</cell>
-        <cell>11</cell>
-      </row>
-      <row bottom="minor">
-        <cell>C</cell>
-        <cell>C<m>\sharp</m></cell>
-        <cell>D</cell>
-        <cell>E<m>\flat</m></cell>
-        <cell>E</cell>
-        <cell>F</cell>
-        <cell>F<m>\sharp</m></cell>
-        <cell>G</cell>
-        <cell>G<m>\sharp</m></cell>
-        <cell>A</cell>
-        <cell>B<m>\flat</m></cell>
-        <cell>B</cell>
-      </row>
-      <row>
-        <cell><m>\frac 1  1</m></cell>
-        <cell><m>\frac{16}{15}</m></cell>
-        <cell><m>\frac 9  8</m></cell>
-        <cell><m>\frac 6  5</m></cell>
-        <cell><m>\frac 5  4</m></cell>
-        <cell><m>\frac 4  3</m></cell>
-        <cell><m>\frac{45}{32}</m></cell>
-        <cell><m>\frac 3  2</m></cell>
-        <cell><m>\frac 8  5</m></cell>
-        <cell><m>\frac 5  3</m></cell>
-        <cell><m>\frac {16} 9</m></cell>
-        <cell><m>\frac {15} 8</m></cell>
-      </row>
-    </tabular>
-  </table>
+    </p>
+    <table xml:id="tab_classicjustscale">
+      <title>The frequency ratios of Kepler's just scale</title>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>10</cell>
+          <cell>11</cell>
+        </row>
+        <row bottom="minor">
+          <cell>C</cell>
+          <cell>C<m>\sharp</m></cell>
+          <cell>D</cell>
+          <cell>E<m>\flat</m></cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>F<m>\sharp</m></cell>
+          <cell>G</cell>
+          <cell>G<m>\sharp</m></cell>
+          <cell>A</cell>
+          <cell>B<m>\flat</m></cell>
+          <cell>B</cell>
+        </row>
+        <row>
+          <cell><m>\frac 1  1</m></cell>
+          <cell><m>\frac{16}{15}</m></cell>
+          <cell><m>\frac 9  8</m></cell>
+          <cell><m>\frac 6  5</m></cell>
+          <cell><m>\frac 5  4</m></cell>
+          <cell><m>\frac 4  3</m></cell>
+          <cell><m>\frac{45}{32}</m></cell>
+          <cell><m>\frac 3  2</m></cell>
+          <cell><m>\frac 8  5</m></cell>
+          <cell><m>\frac 5  3</m></cell>
+          <cell><m>\frac {16} 9</m></cell>
+          <cell><m>\frac {15} 8</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      As promised, the numerators and denominators appearing in this scale are on average quite a bit
+smaller than the ones in <xref ref="tab_pythagoraenscale">Table</xref>. But Kepler's just scale has a
+different set of disadvantages; possibly the most famous is the <em>wolf fifth</em> between D and A,
+with a frequency ratio of <m> \frac 5 3 \cdot \frac 8 9 = \frac{ 40 }{ 27 }</m>, which is a bit off
+from <m>\frac 3 2</m>.
+    </p>
   </subsection>
   <subsection>
     <title>Equal-tempered scales and continued fractions</title>
