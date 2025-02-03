@@ -264,7 +264,7 @@ rationals:
     </p>
     <ol> 
       <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> into its integer and fractional parts.
-        (So <m>\lfloor x \rfloor</m> is the largest integer .) Let's call <m>m_0 := \lfloor x \rfloor</m> and <m>x_1 := \frac{ 1 }{ \{ x \} }</m>.</li>
+        (So <m>\lfloor x \rfloor</m> is the largest integer <m> \le x </m> and, .) Let's call <m>m_0 := \lfloor x \rfloor</m> and <m>x_1 := \frac{ 1 }{ \{ x \} }</m>.</li>
       <li>Decompose <m>x_1 = \lfloor x_1 \rfloor + \{ x_1 \}</m> and call <m>m_1 := \lfloor x_1
 \rfloor</m> and <m>x_2 := \frac{ 1 }{ \{ x_1 \} }</m>.</li>
       <li>Keep going.</li>
