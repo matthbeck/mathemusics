@@ -263,15 +263,18 @@ fractions</em>. This is a tried-and-trusted approach to approximating a given nu
 rationals:
     </p>
     <ol> 
-      <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> and let's call <m>m_0 := \lfloor x \rfloor</m> and <m> x_1 := \frac{ 1 }{ \{ x \} }</m>.</li>
-      <li>Decompose <m>x_1 = \lfloor x_1 \rfloor + \{ x_1 \}</m> and let's call <m>m_1 := \lfloor x_1
+      <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> into its integer and rational part.<fn>
+        So <m> \lfloor x \rfloor </m> is the largest integer <m> \le x </m> and, consequently, <m>
+ 0 \le \{ x \} < 1 </m>.
+</fn> Let's call <m>m_0 := \lfloor x \rfloor</m> and <m> x_1 := \frac{ 1 }{ \{ x \} }</m>.</li>
+      <li>Decompose <m>x_1 = \lfloor x_1 \rfloor + \{ x_1 \}</m> and call <m>m_1 := \lfloor x_1
 \rfloor</m> and <m> x_2 := \frac{ 1 }{ \{ x_1 \} }</m>.</li>
       <li>Keep going.</li>
     </ol> 
     <p>
       This algorithm produces the representation
       <me>
-        x = m_0 + \frac{ 1 }{ m_1 + \frac{ 1 }{ m_2 + \frac{ 1 }{ m_3 + \ddots } } } 
+        x = m_0 + \frac{ 1 }{ m_1 + \frac{ 1 }{ m_2 + \frac{ 1 }{ m_3 + \frac{ 1 }{ \ddots } } } } 
       </me>
     </p>
 
