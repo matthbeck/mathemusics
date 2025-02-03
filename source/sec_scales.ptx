@@ -257,7 +257,17 @@ appropriate power of <m>\sqrt[12] 2</m>. The resulting scale in <xref ref="tab_e
       An equal temperament is what a piano tuner attempts, so if you've ever wondered what <m>\sqrt
 2</m> sounds like, play a tritone<ellipsis/>
     </p>
-  
+    <p>
+      To come up with a just tuning that approximates equal temperament well, we use <em>continued
+fractions</em>. This is a tried-and-trusted approach to approximating a given number <m>x</m> by
+rationals:
+    </p>
+    <ol> 
+      <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> and let's call <m>x_0 := \lfloor x
+\rfloor</m>.
+    </ol> 
+
+ 
   </subsection>
   <subsection>
     <title>Why 12?</title>
