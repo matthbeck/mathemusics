@@ -264,7 +264,7 @@ rationals:
     </p>
     <ol> 
       <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> and let's call <m>x_0 := \lfloor x
-\rfloor</m>.
+\rfloor</m>.</li>
     </ol> 
 
  
