@@ -262,14 +262,14 @@ appropriate power of <m>\sqrt[12] 2</m>. The resulting scale in <xref ref="tab_e
 fractions</em>. This is a tried-and-trusted approach to approximating a given number <m>x</m> by
 rationals:
     </p>
-    <ol> 
+    <ul> 
       <li>Decompose <m>x = \lfloor x \rfloor + \{ x \}</m> into its integer and fractional parts.<fn>
         So <m>\lfloor x \rfloor</m> is the largest integer <m> \le x </m> and, consequently, <m>
  0 \le \{ x \} \lt 1 </m>.</fn> Let's call <m>m_0 := \lfloor x \rfloor</m> and <m>x_1 := \frac{ 1 }{ \{ x \} }</m>.</li>
       <li>Decompose <m>x_1 = \lfloor x_1 \rfloor + \{ x_1 \}</m> and call <m>m_1 := \lfloor x_1
 \rfloor</m> and <m>x_2 := \frac{ 1 }{ \{ x_1 \} }</m>.</li>
       <li>Keep going.</li>
-    </ol> 
+    </ul> 
     <p>
       This algorithm produces the representation
       <me>
@@ -281,6 +281,9 @@ rationals:
         c = continued_fraction(2^(1/12))
         print(c)
         c.convergent(1)
+        c.convergent(2)
+        c.convergent(3)
+        c.convergent(4)
       </input>
       <output>
         [1; 16, 1, 4, 2, 7, 1, 1, 2, 2, 7, 4, 1, 2, 1, 60, 1, 3, 1, 2, ...]
