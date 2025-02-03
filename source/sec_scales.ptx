@@ -271,7 +271,7 @@ rationals:
       <li>Keep going.</li>
     </ul> 
     <p>
-      This algorithm produces the representation
+      This algorithm produces the continued-fractions representation
       <me>
         x \ = \ m_0 + \frac{ 1 }{ m_1 + \frac{ 1 }{ m_2 + \frac{ 1 }{ m_3 + \frac{ 1 }{ \ddots } } } } 
       </me>
@@ -286,6 +286,9 @@ rationals:
       <output>
         [1; 16, 1, 4, 2, 7, 1, 1, 2, 2, 7, 4, 1, 2, 1, 60, 1, 3, 1, 2, ...]
         17/16
+        18/17
+        89/84
+        196/185
       </output>
     </sage>
 
