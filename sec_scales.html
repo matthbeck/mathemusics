@@ -435,7 +435,8 @@ eBookConfig.enable_chatcodes =  false;
 2\)</span> sounds like, play a tritone…</div>
 <div class="para" id="sec_scales-5-5">To come up with a just tuning that approximates equal temperament well, we use <em class="emphasis">continued fractions</em>. This is a tried-and-trusted approach to approximating a given number <span class="process-math">\(x\)</span> by rationals:</div>
 <ol class="decimal" id="sec_scales-5-6">
-<li id="sec_scales-5-6-1"><div class="para" id="p-derived-sec_scales-5-6-1">Decompose <span class="process-math">\(x = \lfloor x \rfloor + \{ x \}\)</span> into its integer and fractional parts. (So <span class="process-math">\(\lfloor x \rfloor\)</span> is the largest integer <span class="process-math">\(\le x \)</span> and, consequently, <span class="process-math">\(0 \le \{ x \} \lt 1 \text{.}\)</span>) Let’s call <span class="process-math">\(m_0 := \lfloor x \rfloor\)</span> and <span class="process-math">\(x_1 := \frac{ 1 }{ \{ x \} }\text{.}\)</span>
+<li id="sec_scales-5-6-1"><div class="para" id="p-derived-sec_scales-5-6-1">Decompose <span class="process-math">\(x = \lfloor x \rfloor + \{ x \}\)</span> into its integer and fractional parts.<details class="ptx-footnote" aria-live="polite" id="sec_scales-5-6-1-2"><summary class="ptx-footnote__number" title="Footnote 3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec_scales-5-6-1-2">So <span class="process-math">\(\lfloor x \rfloor\)</span> is the largest integer <span class="process-math">\(\le x \)</span> and, consequently, <span class="process-math">\(0 \le \{ x \} \lt 1 \text{.}\)</span>
+</div></details> Let’s call <span class="process-math">\(m_0 := \lfloor x \rfloor\)</span> and <span class="process-math">\(x_1 := \frac{ 1 }{ \{ x \} }\text{.}\)</span>
 </div></li>
 <li id="sec_scales-5-6-2"><div class="para" id="p-derived-sec_scales-5-6-2">Decompose <span class="process-math">\(x_1 = \lfloor x_1 \rfloor + \{ x_1 \}\)</span> and call <span class="process-math">\(m_1 := \lfloor x_1
 \rfloor\)</span> and <span class="process-math">\(x_2 := \frac{ 1 }{ \{ x_1 \} }\text{.}\)</span>
@@ -446,10 +447,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">This algorithm produces the representation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x = m_0 + \frac{ 1 }{ m_1 + \frac{ 1 }{ m_2 + \frac{ 1 }{ m_3 + \frac{ 1 }{ \ddots } } } } 
+x \ = \ m_0 + \frac{ 1 }{ m_1 + \frac{ 1 }{ m_2 + \frac{ 1 }{ m_3 + \frac{ 1 }{ \ddots } } } } 
 \end{equation*}
 </div>
-</div></section><section class="subsection" id="sec_scales-6"><h3 class="heading hide-type">
+</div>
+<div id="sec_scales-5-8" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">c = continued_fraction(2^(1/12))
+c
+c.convergent(1)
+</script></div></section><section class="subsection" id="sec_scales-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Why 12?</span>
 </h3>
 <div class="para" id="sec_scales-6-2">Continued fractions turn out to be useful also when constructing a scale from first principles. Let’s say we want to come up with a scale with <span class="process-math">\(n\)</span> tones per octave, and we’d like to have a good approximation of the frequency ratio <span class="process-math">\(\frac 3 2\)</span> for the perfect fifth. If you think about the construction above, this translates to finding a “good” fraction <span class="process-math">\(\frac a b\)</span> in the sense that <span class="process-math">\(2^{ \frac a b }\)</span> is reasonably close to <span class="process-math">\(\frac 3 2\)</span>—in other words, we want to have a good rational approximation of <span class="process-math">\(\log_2(\frac 3 2)\text{.}\)</span> The continued fraction of this number is as follows:</div>
