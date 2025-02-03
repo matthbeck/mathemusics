@@ -279,7 +279,7 @@ rationals:
     <sage>
       <input>
         c = continued_fraction(2^(1/12))
-        c
+        print(c)
         c.convergent(1)
       </input>
       <output>
